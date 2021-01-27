@@ -1,0 +1,15 @@
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px; 
+}
+
+main {
+    width: 50%;
+    margin: auto;   
+}
+
+.peg {
+    width: 50%;
+    margin: auto;
+}
