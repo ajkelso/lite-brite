@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :find_user only: [:show, :update, :destroy]
+    before_action :find_user, only: [:show, :update, :destroy]
 
     def index
         users = User.all
@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     end
 
     def show
-        render json: user
+        render json: @user
     end
 
     def create
@@ -15,27 +15,27 @@ class UsersController < ApplicationController
         if user.save
             render json: user
         else
-            render json: { error: "Couldn't create user", status: 400 }, status 400
+            render json: { error: "Couldn't create user", status: 400 }
         end
     end
 
     def update
-        if user.update(user_params)
-            render json: user
+        if @user.update(user_params)
+            render json: @user
         else
-            render json: {error: "Couldn't update user", status: 400}, status 400
+            render json: {error: "Couldn't update user", status: 400}, status: 400
         end
     end
 
     def destroy
-        user.destroy
-        render json: user
+        @user.destroy
+        render json: @user
     end
 
     private
 
     def find_user
-        user = User.find_by_id(params[:id])
+        @user = User.find_by_id(params[:id])
     end
 
     def user_params
