@@ -1,11 +1,15 @@
 class Control {
 
     constructor() {
-        let colorSelectors = []
+        let this.colorSelectors = []
+        this.createColors()
+
     }
     
     createColors = () => {
         let colors = ["Red", "Yellow", "Blue", "Green", "Purple"]
-        colors.forEach(color => colorSelectors.push(new Color(color)))
+        colors.forEach(color => this.colorSelectors.push(new Color(color)))
     }
+
+    
 }
