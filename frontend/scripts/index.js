@@ -21,5 +21,7 @@ selectors.forEach(selector => {
 })
 const c1 = new Canvas
 
+const api = new APIAdapter
+
 
 

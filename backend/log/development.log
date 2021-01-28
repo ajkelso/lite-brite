@@ -678,3 +678,45 @@ Processing by DrawingsController#show as HTML
 Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 842)
 
 
+Started GET "/drawings" for ::1 at 2021-01-28 14:43:03 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.85ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 1.6ms | Allocations: 2914)
+
+
+Started GET "/drawings" for ::1 at 2021-01-28 14:43:14 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.09ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 2895)
+
+
+Started GET "/drawings/14" for ::1 at 2021-01-28 14:43:49 -0500
+Processing by DrawingsController#show as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mDrawing Load (0.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:38:in `find_drawing'
+[active_model_serializers] Rendered DrawingSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 83ms (Views: 77.5ms | ActiveRecord: 0.4ms | Allocations: 858)
+
+
+Started POST "/users" for ::1 at 2021-01-28 14:50:00 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"Sheila", "user"=>{"name"=>"Sheila"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sheila"], ["created_at", "2021-01-28 19:50:00.469728"], ["updated_at", "2021-01-28 19:50:00.469728"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+[active_model_serializers]   [1m[36mDrawing Load (0.7ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."user_id" = ?[0m  [["user_id", 3]]
+[active_model_serializers]   ↳ app/controllers/users_controller.rb:16:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.28ms)
+Completed 200 OK in 35ms (Views: 14.1ms | ActiveRecord: 4.3ms | Allocations: 6685)
+
+
