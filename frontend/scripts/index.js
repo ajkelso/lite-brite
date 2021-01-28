@@ -6,6 +6,11 @@ const blueSelector = document.querySelector('#blue-button')
 const greenSelector = document.querySelector('#green-button')
 const purpleSelector = document.querySelector('#purple-button')
 
+let mouseIsDown = false
+
+window.addEventListener('mousedown', () => mouseIsDown = true)
+window.addEventListener('mouseup', () => mouseIsDown = false)
+
 let currentColor = null
 const selectors = [redSelector, yellowSelector, blueSelector, greenSelector, purpleSelector]
 
@@ -14,7 +19,7 @@ selectors.forEach(selector => {
         currentColor = selector.innerText
     })
 })
-new Canvas
+const c1 = new Canvas
 
 
 
