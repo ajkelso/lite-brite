@@ -12,8 +12,9 @@ const selectors = [redSelector, yellowSelector, blueSelector, greenSelector, pur
 selectors.forEach(selector => {
     selector.addEventListener('click', function(e) {
         currentColor = selector.innerText
-        console.log(currentColor)
     })
 })
+new Canvas
+
 
 
