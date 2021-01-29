@@ -10,7 +10,7 @@ class APIAdapter {
     parseJSON = res => res.json()
     headers = {"Accepts":"application/json", "Content-Type": "application/json"}
     
-    get userURL() {
+    get usersURL() {
         return this.url + "/users"
     }
 
@@ -24,9 +24,16 @@ class APIAdapter {
     getDrawings = () => fetch(this.drawingsURL).then(this.parseJSON)
     getDrawing = (drawingId) => fetch(this.drawingsURL + `/${drawingId}`).then(this.parseJSON)
 
-    postUser = body => fetch(this.userURL, {
+    postUser = body => fetch(this.usersURL, {
         method: 'POST',
         headers: this.headers,
         body: JSON.stringify(body)
     }).then(this.parseJSON)
+
+    postDrawing = body => fetch(this.drawingsURL, {
+        method: 'POST',
+        headers: this.headers,
+        body: JSON.stringify(body)
+    }).then(this.parseJSON)
+    
 }

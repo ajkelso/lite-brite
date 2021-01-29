@@ -10,6 +10,7 @@ class Peg {
         svg.setAttribute('width', '30')
         svg.setAttribute('height', '30')
         let circle = document.createElementNS("http://www.w3.org/2000/svg", 'circle')
+        circle.classList.add('peg')
         circle.setAttribute('cx', '15')
         circle.setAttribute('cy', '15')
         circle.setAttribute('r', '14.5')
@@ -26,6 +27,6 @@ class Peg {
 
         svg.appendChild(circle)
         this.html.append(svg)
-        this.html.className = `peg ${this.color}` 
+        this.html.className = `peg-div` 
     }
 } 

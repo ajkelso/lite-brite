@@ -1,13 +1,17 @@
 class Canvas {
-    constructor() {
+    constructor(layout) {
         this.pegs = [];
-        this.untouchedCanvasLayout()
+        if (layout) {
+            this.layout = layout
+        }else{
+            this.untouchedCanvas()
+        }
         this.createCanvas()
         this.createPegs(this.layout)
         this.createRows()
     }
 
-    untouchedCanvasLayout = () => {
+    untouchedCanvas = () => {
         this.layout = []
         for (let i = 0; i < 80; i++) {
             this.layout.push("black")
@@ -39,14 +43,18 @@ class Canvas {
             for (let j = 0; j < rows[i].length; j++) {
                 div.append(rows[i][j].html)
             }
-            main.append(div)
+            this.canvas.append(div)
         }
         
     }
 
     createCanvas = () => {
+        let canvas = document.querySelector('#canvas')
+        if (canvas){
+            canvas.remove()
+        }
         this.canvas = document.createElement('div')
-        this.canvas.className = "canvas"
+        this.canvas.id = "canvas"
         main.append(this.canvas)
     }
 }
