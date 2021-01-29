@@ -15,6 +15,7 @@ class Canvas {
         // this.createCanvas()
         this.createPegs(this.layout)
         this.createRows()
+        this.createSave()
     }
 
     createPegs = (layout) => {
@@ -43,8 +44,17 @@ class Canvas {
                 div.append(rows[i][j].html)
             }
             canvas.append(div)
-        }
-        
+        }  
+    }
+
+    createSave = () => {
+        const save = document.createElement('button')
+        save.id = 'done-button'
+        save.innerHTML = 'Done!'
+        save.addEventListener('click', function (e) {
+            new SaveForm
+        })
+        main.append(save)
     }
 
     // createCanvas = () => {
