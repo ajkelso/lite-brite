@@ -5,6 +5,7 @@ const yellowSelector = document.querySelector('#yellow-button')
 const blueSelector = document.querySelector('#blue-button')
 const greenSelector = document.querySelector('#green-button')
 const purpleSelector = document.querySelector('#purple-button')
+const canvas = document.querySelector('#canvas')
 
 let mouseIsDown = false
 

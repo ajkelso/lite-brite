@@ -1,21 +1,20 @@
 class Canvas {
-    constructor(layout) {
-        this.pegs = [];
-        if (layout) {
-            this.layout = layout
-        }else{
-            this.untouchedCanvas()
+    
+    static untouchedCanvas = () => {
+        let layout = []
+        for (let i = 0; i < 80; i++) {
+            layout.push("black")
         }
-        this.createCanvas()
+        return layout
+    }
+    
+    constructor(layout = Canvas.untouchedCanvas()) {
+        canvas.innerHTML =""
+        this.pegs = [];
+        this.layout = layout
+        // this.createCanvas()
         this.createPegs(this.layout)
         this.createRows()
-    }
-
-    untouchedCanvas = () => {
-        this.layout = []
-        for (let i = 0; i < 80; i++) {
-            this.layout.push("black")
-        }
     }
 
     createPegs = (layout) => {
@@ -43,18 +42,18 @@ class Canvas {
             for (let j = 0; j < rows[i].length; j++) {
                 div.append(rows[i][j].html)
             }
-            this.canvas.append(div)
+            canvas.append(div)
         }
         
     }
 
-    createCanvas = () => {
-        let canvas = document.querySelector('#canvas')
-        if (canvas){
-            canvas.remove()
-        }
-        this.canvas = document.createElement('div')
-        this.canvas.id = "canvas"
-        main.append(this.canvas)
-    }
+    // createCanvas = () => {
+    //     let canvas = document.querySelector('#canvas')
+    //     if (canvas){
+    //         canvas.remove()
+    //     }
+    //     this.canvas = document.createElement('div')
+    //     this.canvas.id = "canvas"
+    //     main.append(this.canvas)
+    // }
 }

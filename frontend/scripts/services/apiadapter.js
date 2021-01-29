@@ -35,5 +35,16 @@ class APIAdapter {
         headers: this.headers,
         body: JSON.stringify(body)
     }).then(this.parseJSON)
-    
+
+    updateDrawing = (drawingId,body) => fetch(this.drawingsURL + `/${drawingId}`, {
+        method: 'PATCH',
+        headers: this.headers,
+        body: JSON.stringify(body)
+    }).then(this.parseJSON)
+
+    deleteDrawing = (drawingId) => fetch(this.drawingsURL + `/${drawingId}`, {
+        method: 'DELETE',
+        headers: this.headers,
+        body: JSON.stringify(drawingId)
+    }).then(this.parseJSON)
 }

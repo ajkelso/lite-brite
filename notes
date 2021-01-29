@@ -1,0 +1,5 @@
+SELECT AND CREATE NEW LAYOUT
+let array = document.querySelectorAll('.peg')
+let layout = Array.from(array).map( peg => {
+    return peg.getAttribute('fill')
+}

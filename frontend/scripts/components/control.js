@@ -1,7 +1,7 @@
 class Control {
 
     constructor() {
-        let this.colorSelectors = []
+        this.colorSelectors = []
         this.createColors()
 
     }
