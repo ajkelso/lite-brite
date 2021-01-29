@@ -22,7 +22,7 @@ class SaveForm {
 
         const titleInput = document.createElement('input')
         titleInput.type = "text"
-        titleInput.id = "drawing-title"
+        titleInput.id = "title"
 
         const submitButton = document.createElement('input')
         submitButton.type = "submit"
@@ -30,6 +30,20 @@ class SaveForm {
 
         canvasForm.append(userLabel, userInput, titleLabel, titleInput, submitButton)
         this.html.append(canvasForm)
+
+        canvasForm.addEventListener('submit', this.handleSubmit)
+
         main.append(this.html)
+    }
+
+    handleSubmit = event => {
+        event.preventDefault()
+        const userName = event.target.name.value
+        const drawingTitle = event.target.title.value
+        const pattern = Array.from(document.querySelectorAll('.peg')).map( peg => {
+            return peg.getAttribute('fill')
+        })
+        
+        
     }
 }

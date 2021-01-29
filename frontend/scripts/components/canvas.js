@@ -27,6 +27,9 @@ class Canvas {
     }
 
     createRows = () => {
+        
+        //refactor this business!
+        
         let row1 = this.pegs.slice(0, 10)
         let row2 = this.pegs.slice(10, 20)
         let row3 = this.pegs.slice(20, 30)
