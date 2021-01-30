@@ -790,3 +790,169 @@ Processing by DrawingsController#create as */*
 Completed 200 OK in 59ms (Views: 2.9ms | ActiveRecord: 42.2ms | Allocations: 5414)
 
 
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddTitleToDrawings (20210129210253)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "drawings" ADD "title" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210129210253"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/drawings" for ::1 at 2021-01-29 16:08:16 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/KelsoMacBookAir/Flatiron/java/lite-brite/backend/app/controllers/drawings_controller.rb:43: syntax error, unexpected ')', expecting =>
+...(:user_id, pattern: [], :title)
+...                              ^):
+  
+app/controllers/drawings_controller.rb:43: syntax error, unexpected ')', expecting =>
+app/controllers/drawings_controller.rb:43: syntax error, unexpected ')', expecting =>
+Started POST "/drawings" for ::1 at 2021-01-29 16:09:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ArgumentError (No association found for name `name'. Has it been defined yet?):
+  
+app/models/drawing.rb:5:in `<class:Drawing>'
+app/models/drawing.rb:1:in `<main>'
+Started POST "/drawings" for ::1 at 2021-01-29 16:11:59 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ArgumentError (No association found for name `name'. Has it been defined yet?):
+  
+app/models/drawing.rb:5:in `<class:Drawing>'
+app/models/drawing.rb:1:in `<main>'
+Started POST "/drawings" for ::1 at 2021-01-29 16:12:31 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (No association found for name `name'. Has it been defined yet?):
+  
+app/models/drawing.rb:5:in `<class:Drawing>'
+app/models/drawing.rb:1:in `<main>'
+Started POST "/drawings" for ::1 at 2021-01-29 16:14:16 -0500
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"kjsah", "pattern"=>["Yellow", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Yellow", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Yellow", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Yellow", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Yellow", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Yellow", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"]}}
+Started POST "/drawings" for ::1 at 2021-01-29 16:15:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"BYE", "pattern"=>["Red", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user"=>{"name"=>"HI"}}}
+[31mUnpermitted parameter: :user[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 105388ms (Views: 4.8ms | ActiveRecord: 1.5ms | Allocations: 85804)
+
+
+Completed 200 OK in 18101ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 12773)
+
+
+Started POST "/drawings" for ::1 at 2021-01-29 16:17:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ArgumentError (No association found for name `name'. Has it been defined yet?):
+  
+app/models/drawing.rb:5:in `<class:Drawing>'
+app/models/drawing.rb:1:in `<main>'
+Started POST "/drawings" for ::1 at 2021-01-29 16:18:39 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"BYE", "pattern"=>["Red", "Red", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user"=>{"name"=>"HI"}}}
+[31mUnpermitted parameter: :user[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 13815ms (Views: 1.7ms | ActiveRecord: 1.1ms | Allocations: 44674)
+
+
+Started POST "/drawings" for ::1 at 2021-01-29 16:19:21 -0500
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"BYE", "pattern"=>["Red", "Red", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user"=>{"name"=>"HI"}}}
+[31mUnpermitted parameter: :user[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 4298ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 3013)
+
+
+Started POST "/drawings" for ::1 at 2021-01-29 16:19:51 -0500
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"BYE", "pattern"=>["black", "black", "Blue", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Blue", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Blue", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Blue", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Blue", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "users"=>{"name"=>"HI"}}}
+[31mUnpermitted parameter: :users[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 3377ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 2974)
+
+
+Started POST "/drawings" for ::1 at 2021-01-29 20:45:18 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"Bye", "pattern"=>["Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user_attributes"=>{"name"=>"HI"}}}
+[31mUnpermitted parameter: :user_attributes[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.39ms)
+Completed 200 OK in 16803ms (Views: 3.1ms | ActiveRecord: 1.4ms | Allocations: 44422)
+
+
+Started POST "/drawings" for ::1 at 2021-01-29 20:46:02 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"BYE", "pattern"=>["Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user_attributes"=>{"name"=>"HI"}}}
+Started POST "/drawings" for ::1 at 2021-01-29 20:46:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "HI"], ["created_at", "2021-01-30 01:46:18.495076"], ["updated_at", "2021-01-30 01:46:18.495076"]]
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("pattern", "user_id", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?)[0m  [["pattern", "---\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n"], ["user_id", 4], ["created_at", "2021-01-30 01:46:18.502753"], ["updated_at", "2021-01-30 01:46:18.502753"], ["title", "BYE"]]
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+[active_model_serializers] Rendered DrawingSerializer with ActiveModelSerializers::Adapter::Attributes (1.14ms)
+Completed 200 OK in 15675ms (Views: 22.6ms | ActiveRecord: 7.1ms | Allocations: 19964)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"BYE", "pattern"=>["Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user_attributes"=>{"name"=>"HI"}}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "HI"], ["created_at", "2021-01-30 01:46:35.707139"], ["updated_at", "2021-01-30 01:46:35.707139"]]
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[36mDrawing Create (0.3ms)[0m  [1m[32mINSERT INTO "drawings" ("pattern", "user_id", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?)[0m  [["pattern", "---\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n"], ["user_id", 5], ["created_at", "2021-01-30 01:46:35.710754"], ["updated_at", "2021-01-30 01:46:35.710754"], ["title", "BYE"]]
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+[active_model_serializers] Rendered DrawingSerializer with ActiveModelSerializers::Adapter::Attributes (1.1ms)
+Completed 200 OK in 17120ms (Views: 2.6ms | ActiveRecord: 4.0ms | Allocations: 23582)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/drawings" for ::1 at 2021-01-29 20:55:28 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"BYE", "pattern"=>["Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user_attributes"=>{"name"=>"HI"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "HI"], ["LIMIT", 1]]
+  ↳ app/models/drawing.rb:8:in `user_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[36mDrawing Create (3.4ms)[0m  [1m[32mINSERT INTO "drawings" ("pattern", "user_id", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?)[0m  [["pattern", "---\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n"], ["user_id", 4], ["created_at", "2021-01-30 01:56:54.251378"], ["updated_at", "2021-01-30 01:56:54.251378"], ["title", "BYE"]]
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+[active_model_serializers] Rendered DrawingSerializer with ActiveModelSerializers::Adapter::Attributes (2.49ms)
+Completed 200 OK in 85303ms (Views: 4.1ms | ActiveRecord: 5.1ms | Allocations: 17636)
+
+
+Started POST "/drawings" for ::1 at 2021-01-29 20:58:19 -0500
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"Hello!", "pattern"=>["Blue", "Blue", "Blue", "Red", "black", "black", "black", "black", "black", "black", "Blue", "black", "black", "black", "black", "Blue", "Blue", "black", "black", "black", "Blue", "black", "black", "Blue", "Blue", "black", "black", "Blue", "black", "black", "Red", "Blue", "Blue", "Blue", "black", "black", "black", "Blue", "black", "black", "Red", "black", "Blue", "black", "black", "black", "black", "black", "black", "black", "black", "black", "Blue", "Blue", "black", "Blue", "Blue", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user_attributes"=>{"name"=>"Andy"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Andy"], ["LIMIT", 1]]
+  ↳ app/models/drawing.rb:8:in `user_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[36mDrawing Create (0.5ms)[0m  [1m[32mINSERT INTO "drawings" ("pattern", "user_id", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?)[0m  [["pattern", "---\n- Blue\n- Blue\n- Blue\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- Blue\n- black\n- black\n- black\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- Blue\n- black\n- black\n- Blue\n- Blue\n- black\n- black\n- Blue\n- black\n- black\n- Red\n- Blue\n- Blue\n- Blue\n- black\n- black\n- black\n- Blue\n- black\n- black\n- Red\n- black\n- Blue\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Blue\n- Blue\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n"], ["user_id", 1], ["created_at", "2021-01-30 01:58:26.657019"], ["updated_at", "2021-01-30 01:58:26.657019"], ["title", "Hello!"]]
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:16:in `create'
+[active_model_serializers] Rendered DrawingSerializer with ActiveModelSerializers::Adapter::Attributes (0.95ms)
+Completed 200 OK in 6997ms (Views: 1.7ms | ActiveRecord: 1.9ms | Allocations: 7554)
+
+

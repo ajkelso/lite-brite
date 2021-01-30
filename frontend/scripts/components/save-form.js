@@ -43,7 +43,17 @@ class SaveForm {
         const pattern = Array.from(document.querySelectorAll('.peg')).map( peg => {
             return peg.getAttribute('fill')
         })
-        
-        
+        api.postDrawing({
+            // user: {
+            //     name: userName,
+            // },
+            drawing: {
+                title: drawingTitle,
+                pattern: pattern,
+                user_attributes: {
+                    name: userName,
+                },
+            }
+        }).then(console.log)
     }
 }

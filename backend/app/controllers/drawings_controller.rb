@@ -11,6 +11,7 @@ class DrawingsController < ApplicationController
     end
 
     def create
+        byebug
         drawing = Drawing.new(drawing_params)
         if drawing.save
             render json: drawing
@@ -39,6 +40,6 @@ class DrawingsController < ApplicationController
     end
 
     def drawing_params
-        params.require(:drawing).permit(:user_id, pattern: [])
+        params.require(:drawing).permit(:user_id, :title, pattern: [], user_attributes: [:name])
     end
 end
