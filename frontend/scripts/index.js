@@ -21,6 +21,7 @@ selectors.forEach(selector => {
     })
 })
 const c1 = new Canvas
+const saveButton = document.getElementById('save-button')
 
 const api = new APIAdapter
 

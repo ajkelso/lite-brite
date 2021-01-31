@@ -52,8 +52,8 @@ class Canvas {
 
     createSave = () => {
         const save = document.createElement('button')
-        save.id = 'done-button'
-        save.innerHTML = 'Done!'
+        save.id = 'save-button'
+        save.innerHTML = 'Save Drawing'
         save.addEventListener('click', function (e) {
             new SaveForm
         })

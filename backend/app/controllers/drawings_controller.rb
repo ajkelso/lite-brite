@@ -11,7 +11,6 @@ class DrawingsController < ApplicationController
     end
 
     def create
-        byebug
         drawing = Drawing.new(drawing_params)
         if drawing.save
             render json: drawing
