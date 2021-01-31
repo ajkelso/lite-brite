@@ -16,6 +16,7 @@ class Canvas {
         this.createPegs(this.layout)
         this.createRows()
         this.createSave()
+        this.createReset()
     }
 
     createPegs = (layout) => {
@@ -58,6 +59,18 @@ class Canvas {
             new SaveForm
         })
         main.append(save)
+    }
+
+    createReset = () => {
+        this.reset = document.createElement('button')
+        this.reset.id = 'reset-button'
+        this.reset.innerHTML = 'Reset Canvas'
+        this.reset.addEventListener('click', function (e) {
+            pegs.forEach(peg => peg.setAttribute('fill', 'black'))
+            this.disabled = true
+        })
+        this.reset.disabled = true
+        main.append(this.reset)
     }
 
     // createCanvas = () => {

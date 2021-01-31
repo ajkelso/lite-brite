@@ -18,7 +18,13 @@ class Peg {
         circle.setAttribute('stroke-width', '1')
         circle.setAttribute('fill', `${this.color}`)
     //change color event
-        circle.addEventListener('mousedown', () => circle.setAttribute('fill', `${currentColor}`))
+        circle.addEventListener('mousedown', () => {
+            circle.setAttribute('fill', `${currentColor}`)
+            if (resetButton.disabled && currentColor != null){
+                resetButton.disabled = false
+            }
+        })
+
         circle.addEventListener('mouseover', () => {
             if (mouseIsDown){
                 circle.setAttribute('fill', `${currentColor}`)
