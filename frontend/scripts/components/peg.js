@@ -23,6 +23,9 @@ class Peg {
             if (resetButton.disabled && currentColor != null){
                 resetButton.disabled = false
             }
+            if (saveButton.disabled && currentColor != null){
+                saveButton.disabled = false
+            }
         })
 
         circle.addEventListener('mouseover', () => {

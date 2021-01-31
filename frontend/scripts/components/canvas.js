@@ -52,13 +52,14 @@ class Canvas {
     }
 
     createSave = () => {
-        const save = document.createElement('button')
-        save.id = 'save-button'
-        save.innerHTML = 'Save Drawing'
-        save.addEventListener('click', function (e) {
+        this.save = document.createElement('button')
+        this.save.id = 'save-button'
+        this.save.innerHTML = 'Save Drawing'
+        this.save.addEventListener('click', function (e) {
             new SaveForm
         })
-        main.append(save)
+        this.save.disabled = true
+        main.append(this.save)
     }
 
     createReset = () => {
@@ -68,6 +69,7 @@ class Canvas {
         this.reset.addEventListener('click', function (e) {
             pegs.forEach(peg => peg.setAttribute('fill', 'black'))
             this.disabled = true
+            saveButton.disabled = true
         })
         this.reset.disabled = true
         main.append(this.reset)

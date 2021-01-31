@@ -2,6 +2,7 @@ class SaveForm {
 
     constructor() {
         saveButton.style.display = "none"
+        resetButton.disabled = true
         this.html = document.createElement('div')
         this.html.id = "save-form"
         this.renderForm()
@@ -54,5 +55,7 @@ class SaveForm {
         }).then(console.log)
         event.target.remove()
         saveButton.style.display = ""
+        saveButton.disabled = true
+        resetButton.disabled = false
     }
 }
