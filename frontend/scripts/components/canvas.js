@@ -2,7 +2,7 @@ class Canvas {
     
     static untouchedCanvas = () => {
         let layout = []
-        for (let i = 0; i < 80; i++) {
+        for (let i = 0; i < 800; i++) {
             layout.push("black")
         }
         return layout
@@ -10,21 +10,25 @@ class Canvas {
     
     constructor(layout = Canvas.untouchedCanvas()) {
         canvas.innerHTML =""
-        this.pegs = [];
-        this.layout = layout
+        this.layout = layout 
         // this.createCanvas()
-        this.createPegs(this.layout)
+        this.createPegs()
         this.createRows()
         this.createSave()
         this.createReset()
+        
     }
 
-    createPegs = (layout) => {
-        for (let i = 0; i < 1000; i++) {
-            let peg = new Peg(layout[i], this.canvas)
-            peg.html.id = i + 1
-            this.pegs.push(peg) 
-        }
+    createPegs = () => {
+        this.pegs = this.layout.map( color => {
+            return new Peg(color, this.canvas)
+        })
+
+        // for (let i = 0; i < 800; i++) {
+        //     let peg = new Peg(layout[i], this.canvas)
+        //     peg.html.id = i + 1
+        //     this.pegs.push(peg) 
+        // }
     }
 
     createRows = () => {
@@ -49,7 +53,7 @@ class Canvas {
             new SaveForm
         })
         this.save.disabled = true
-        main.append(this.save)
+        canvas.append(this.save)
     }
 
     createReset = () => {
@@ -62,7 +66,7 @@ class Canvas {
             saveButton.disabled = true
         })
         this.reset.disabled = true
-        main.append(this.reset)
+        canvas.append(this.reset)
     }
 
     // createCanvas = () => {

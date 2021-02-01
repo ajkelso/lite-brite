@@ -1,3 +1,3 @@
 class DrawingSerializer < ActiveModel::Serializer
-  attributes :id, :pattern, :user_id
+  attributes :id, :title, :pattern, :user_id
 end

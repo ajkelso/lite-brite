@@ -6,7 +6,6 @@ const blueSelector = document.querySelector('#blue-button')
 const greenSelector = document.querySelector('#green-button')
 const purpleSelector = document.querySelector('#purple-button')
 const canvas = document.querySelector('#canvas')
-
 let mouseIsDown = false
 
 window.addEventListener('mousedown', () => mouseIsDown = true)
@@ -20,7 +19,8 @@ selectors.forEach(selector => {
         currentColor = selector.innerText
     })
 })
-const c1 = new Canvas
+
+const c1 = new Canvas()
 const saveButton = document.getElementById('save-button')
 const pegs = document.querySelectorAll('.peg')
 const resetButton = document.getElementById('reset-button')
