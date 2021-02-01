@@ -1,12 +1,17 @@
+body {
+    background-color:black;
+}
+
 .row {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(50, 1fr);
     gap: 1px; 
 }
 
 main {
-    width: 50%;
-    margin: auto;   
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .peg {
