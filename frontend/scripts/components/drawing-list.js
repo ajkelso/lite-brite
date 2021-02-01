@@ -14,6 +14,9 @@ class DrawingList {
                 let li = document.createElement('li')
                 let link = document.createElement('a')
                 link.innerText = drawing.title
+                link.addEventListener('click', function (e) {
+                    new Canvas(drawing.pattern)
+                })
                 li.append(link)
                 ul.append(li)
             });
