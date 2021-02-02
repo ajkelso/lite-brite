@@ -23,7 +23,7 @@ class BelowCanvas {
         this.update = document.createElement('button')
         this.update.id = 'save-button'
         this.update.innerHTML = 'Update Drawing'
-        this.update.addEventListener('click', (e) => new UpdateForm)
+        this.update.addEventListener('click', (e) => new UpdateForm(this.drawing))
         this.buttons.append(this.update)
     }
 

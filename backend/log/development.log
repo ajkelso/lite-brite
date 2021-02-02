@@ -2553,3 +2553,122 @@ Processing by DrawingsController#index as */*
 Completed 200 OK in 79ms (Views: 78.9ms | ActiveRecord: 0.2ms | Allocations: 64290)
 
 
+Started GET "/drawings" for ::1 at 2021-02-02 16:15:27 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (13.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (242.66ms)
+Completed 200 OK in 272ms (Views: 254.3ms | ActiveRecord: 13.5ms | Allocations: 64313)
+
+
+Started GET "/drawings" for ::1 at 2021-02-02 16:15:28 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (103.1ms)
+Completed 200 OK in 108ms (Views: 106.9ms | ActiveRecord: 0.5ms | Allocations: 64294)
+
+
+Started GET "/drawings" for ::1 at 2021-02-02 16:16:53 -0500
+Processing by DrawingsController#index as HTML
+  [1m[36mDrawing Load (0.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (66.57ms)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.5ms | Allocations: 64287)
+
+
+Started GET "/drawings" for ::1 at 2021-02-02 16:22:50 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#index as HTML
+  [1m[36mDrawing Load (6.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.04ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 6.7ms | Allocations: 14122)
+
+
+  
+NoMethodError (undefined method `collect' for #<User:0x00007fce26cf49e0>):
+  
+app/serializers/drawing_serializer.rb:5:in `user'
+app/controllers/drawings_controller.rb:6:in `index'
+Started GET "/drawings" for ::1 at 2021-02-02 16:24:03 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#index as HTML
+  [1m[36mDrawing Load (7.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ (byebug):1:in `user'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (97107.89ms)
+Completed 500 Internal Server Error in 97148ms (ActiveRecord: 11.0ms | Allocations: 22741)
+
+
+  
+NoMethodError (undefined method `collect' for #<User:0x00007fce20755850>):
+  
+app/serializers/drawing_serializer.rb:6:in `user'
+app/controllers/drawings_controller.rb:6:in `index'
+Started GET "/drawings" for ::1 at 2021-02-02 16:25:45 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#index as HTML
+  [1m[36mDrawing Load (5.7ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (116.89ms)
+Completed 200 OK in 141ms (Views: 127.4ms | ActiveRecord: 9.8ms | Allocations: 81073)
+
+
+Started GET "/drawings" for ::1 at 2021-02-02 16:26:26 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#index as HTML
+  [1m[36mDrawing Load (0.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:6:in `user'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (116.12ms)
+Completed 200 OK in 135ms (Views: 128.8ms | ActiveRecord: 3.4ms | Allocations: 81066)
+
+
