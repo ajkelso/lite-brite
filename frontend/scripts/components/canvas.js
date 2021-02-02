@@ -17,7 +17,7 @@ class Canvas {
         // this.createCanvas()
         this.createPegs()
         this.createRows()
-        this.createSideBar()
+        this.createSideBar(drawing)
         // this.createSave()
         // this.createReset()
     }
@@ -37,9 +37,9 @@ class Canvas {
         canvas.append(div)
     }
 
-    createSideBar() {
+    createSideBar = (drawing) => {
         belowCanvas.innerHTML = ""
-        this.sideBar = new BelowCanvas()
+        this.sideBar = new BelowCanvas(drawing)
     }
 
     // createSave = () => {

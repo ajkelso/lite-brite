@@ -1,14 +1,25 @@
 class BelowCanvas {
-    constructor() {
+    constructor(drawing) {
         this.buttons = document.createElement('div')
-        this.createSave()
-        this.createReset()
+        this.drawing = drawing
+
+        if (!!drawing.id){
+            // this.createUpdateBTN()
+            // this.createNewDrawingBTN()
+        } else {
+            this.createSaveBTN()
+        }
+        this.createResetBTN()
+
+
+        // this.createSaveBTN()
+        // this.createResetBTN()
         belowCanvas.append(this.buttons)
         this.drawingList = new DrawingList
         belowCanvas.append(this.drawingList.html)
     }
 
-    createSave = () => {
+    createSaveBTN = () => {
         this.save = document.createElement('button')
         this.save.id = 'save-button'
         this.save.innerHTML = 'Save Drawing'
@@ -19,12 +30,20 @@ class BelowCanvas {
         this.buttons.append(this.save)
     }
 
-    createReset = () => {
+    createResetBTN = () => {
         this.reset = document.createElement('button')
         this.reset.id = 'reset-button'
         this.reset.innerHTML = 'Reset Canvas'
+        let pattern = this.drawing.pattern
         this.reset.addEventListener('click', function (e) {
-            document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
+            if (document.querySelector('.rows').getAttribute('user-id') !== "undefined"){
+                let pegs = document.querySelectorAll('.peg')
+                for (let i = 0; i < `pattern.length`; i++) {
+                    pegs[i].setAttribute('fill', pattern[i])
+                }
+            } else {
+                document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
+            }
             this.disabled = true
             document.querySelector('#save-button').disabled = true
         })
