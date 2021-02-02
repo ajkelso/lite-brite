@@ -21,9 +21,8 @@ selectors.forEach(selector => {
 })
 
 const c1 = new Canvas()
-const saveButton = document.getElementById('save-button')
+// const saveButton = document.querySelector('.save-button')
 const pegs = document.querySelectorAll('.peg')
-const resetButton = document.getElementById('reset-button')
 
 const api = new APIAdapter
 

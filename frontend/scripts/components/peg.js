@@ -20,11 +20,11 @@ class Peg {
     //change color event
         svg.addEventListener('mousedown', () => {
             circle.setAttribute('fill', `${currentColor}`)
-            if (resetButton.disabled && currentColor != null){
-                resetButton.disabled = false
+            if (document.querySelector('#reset-button').disabled && currentColor != null){
+                document.querySelector('#reset-button').disabled = false
             }
-            if (saveButton.disabled && currentColor != null){
-                saveButton.disabled = false
+            if (document.querySelector('#save-button').disabled && currentColor != null){
+                document.querySelector('#save-button').disabled = false
             }
         })
 

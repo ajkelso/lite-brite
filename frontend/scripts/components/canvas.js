@@ -23,12 +23,6 @@ class Canvas {
         this.pegs = this.layout.map( color => {
             return new Peg(color, this.canvas)
         })
-
-        // for (let i = 0; i < 800; i++) {
-        //     let peg = new Peg(layout[i], this.canvas)
-        //     peg.html.id = i + 1
-        //     this.pegs.push(peg) 
-        // }
     }
 
     createRows = () => {
