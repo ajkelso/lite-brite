@@ -51,20 +51,20 @@ class Canvas {
     //     belowCanvas.append(div)
     // }
 
-    createReset = () => {
-        let div = document.createElement('div')
-        this.reset = document.createElement('button')
-        this.reset.id = 'reset-button'
-        this.reset.innerHTML = 'Reset Canvas'
-        this.reset.addEventListener('click', function (e) {
-            pegs.forEach(peg => peg.setAttribute('fill', 'black'))
-            this.disabled = true
-            saveButton.disabled = true
-        })
-        this.reset.disabled = true
-        div.append(this.reset)
-        belowCanvas.append(div)
-    }
+    // createReset = () => {
+    //     let div = document.createElement('div')
+    //     this.reset = document.createElement('button')
+    //     this.reset.id = 'reset-button'
+    //     this.reset.innerHTML = 'Reset Canvas'
+    //     this.reset.addEventListener('click', function (e) {
+    //         document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
+    //         this.disabled = true
+    //         saveButton.disabled = true
+    //     })
+    //     this.reset.disabled = true
+    //     div.append(this.reset)
+    //     belowCanvas.append(div)
+    // }
 
     // createCanvas = () => {
     //     let canvas = document.querySelector('#canvas')

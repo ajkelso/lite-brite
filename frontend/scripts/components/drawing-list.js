@@ -16,6 +16,7 @@ class DrawingList {
                 link.href = 'javascript:void(0)'
                 link.innerText = drawing.title
                 link.addEventListener('click', function (e) {
+                    document.querySelector('#save-button').disabled = true
                     new Canvas(drawing.pattern)
                 })
                 li.append(link)

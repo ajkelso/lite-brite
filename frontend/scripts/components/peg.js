@@ -18,7 +18,7 @@ class Peg {
         circle.setAttribute('stroke-width', '1')
         circle.setAttribute('fill', `${this.color}`)
     //change color event
-        svg.addEventListener('mousedown', () => {
+        this.html.addEventListener('mousedown', () => {
             circle.setAttribute('fill', `${currentColor}`)
             if (document.querySelector('#reset-button').disabled && currentColor != null){
                 document.querySelector('#reset-button').disabled = false
@@ -28,7 +28,7 @@ class Peg {
             }
         })
 
-        svg.addEventListener('mouseover', () => {
+        this.html.addEventListener('mouseover', () => {
             if (mouseIsDown){
                 circle.setAttribute('fill', `${currentColor}`)
             }

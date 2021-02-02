@@ -22,7 +22,7 @@ selectors.forEach(selector => {
 })
 
 const c1 = new Canvas()
-const pegs = document.querySelectorAll('.peg')
+// const pegs = document.querySelectorAll('.peg')
 const api = new APIAdapter
 const b1 = new BelowCanvas()
 // const dList = new DrawingList()
