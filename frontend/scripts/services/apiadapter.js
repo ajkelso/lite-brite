@@ -36,7 +36,7 @@ class APIAdapter {
         body: JSON.stringify(body)
     }).then(this.parseJSON)
 
-    updateDrawing = (drawingId,body) => fetch(this.drawingsURL + `/${drawingId}`, {
+    updateDrawing = (drawingId, body) => fetch(this.drawingsURL + `/${drawingId}`, {
         method: 'PATCH',
         headers: this.headers,
         body: JSON.stringify(body)

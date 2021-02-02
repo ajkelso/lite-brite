@@ -1,27 +1,27 @@
 class UpdateForm {
     constructor(drawing) {
-        // document.querySelector('#save-button').style.display = "none"
-        // document.querySelector('#reset-button').disabled = true
+        document.querySelector('#save-button').style.display = "none"
+        document.querySelector('#reset-button').disabled = true
 
-        // this.html = document.createElement('div')
-        // this.html.id = "update-form"
-        // this.renderForm()
+        this.html = document.createElement('div')
+        this.html.id = "update-form"
         this.drawingID = drawing.id
+        this.drawingTitle = drawing.title
+        this.userId = drawing.user.id
+        this.userName = drawing.user.name
+        this.renderForm()
+
         console.log(drawing)
     }
-    
+
 
 
 
     renderForm = () => {
         const canvasForm = document.createElement('form')
 
-        const userLabel = document.createElement('label')
-        userLabel.innerText = "Name: "
-
-        this.userInput = document.createElement('input')
-        this.userInput.type = "text"
-        this.userInput.id = "name"
+        const user = document.createElement('p')
+        user.innerText = `Artist: ${this.userName}`
 
         const titleLabel = document.createElement('label')
         titleLabel.innerText = "Drawing Title: "
@@ -29,12 +29,13 @@ class UpdateForm {
         this.titleInput = document.createElement('input')
         this.titleInput.type = "text"
         this.titleInput.id = "title"
+        this.titleInput.value = this.drawingTitle
 
         const submitButton = document.createElement('input')
         submitButton.type = "submit"
-        submitButton.value = "Save Drawing!"
+        submitButton.value = "Update Drawing!"
 
-        canvasForm.append(userLabel, this.userInput, titleLabel, this.titleInput, submitButton)
+        canvasForm.append(user, titleLabel, this.titleInput, submitButton)
         this.html.append(canvasForm)
 
         canvasForm.addEventListener('submit', this.handleSubmit)
@@ -44,31 +45,26 @@ class UpdateForm {
 
     handleSubmit = event => {
         event.preventDefault()
-        const userName = this.userInput.value
         const drawingTitle = this.titleInput.value
         const pattern = Array.from(document.querySelectorAll('.peg')).map( peg => {
             return peg.getAttribute('fill')
         })
 
-        api.postDrawing({
+        api.updateDrawing(this.drawingID, {
             drawing: {
                 title: drawingTitle,
                 pattern: pattern,
-                user_attributes: {
-                    name: userName,
-                },
             }
-        }).then(console.log)
+        }).then(json => new Canvas(json))
         event.target.remove()
-        document.querySelector('#save-button').style.display = ""
-        document.querySelector('#save-button').disabled = true
-        document.querySelector('#reset-button').disabled = false
-        let li = document.createElement('li')
-        let link = document.createElement('a')
-        link.href = 'javascript:void(0)'
-        link.innerText = drawingTitle
-        li.append(link)
-        debugger
-        document.querySelector('#drawings-list').append(li)
+        // document.querySelector('#save-button').style.display = ""
+        // document.querySelector('#save-button').disabled = true
+        // document.querySelector('#reset-button').disabled = false
+        // let li = document.createElement('li')
+        // let link = document.createElement('a')
+        // link.href = 'javascript:void(0)'
+        // link.innerText = drawingTitle
+        // li.append(link)
+        // document.querySelector('#drawings-list').append(li)
     }
 }

@@ -42,7 +42,7 @@ class BelowCanvas {
         this.reset.innerHTML = 'Reset Canvas'
         let pattern = this.drawing.pattern
         this.reset.addEventListener('click', function (e) {
-            if (document.querySelector('.rows').getAttribute('user-id') !== "undefined"){
+            if (document.querySelector('.rows').getAttribute('drawing-id') !== "undefined"){
                 let pegs = document.querySelectorAll('.peg')
                 for (let i = 0; i < pattern.length; i++) {
                     pegs[i].setAttribute('fill', pattern[i])
