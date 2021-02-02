@@ -1,8 +1,8 @@
 class SaveForm {
 
     constructor() {
-        saveButton.style.display = "none"
-        resetButton.disabled = true
+        document.querySelector('#save-button').style.display = "none"
+        document.querySelector('#reset-button').disabled = true
         this.html = document.createElement('div')
         this.html.id = "save-form"
         this.renderForm()
@@ -44,7 +44,7 @@ class SaveForm {
         const pattern = Array.from(document.querySelectorAll('.peg')).map( peg => {
             return peg.getAttribute('fill')
         })
-        debugger
+
         api.postDrawing({
             drawing: {
                 title: drawingTitle,
@@ -55,8 +55,15 @@ class SaveForm {
             }
         }).then(console.log)
         event.target.remove()
-        saveButton.style.display = ""
-        saveButton.disabled = true
-        resetButton.disabled = false
+        document.querySelector('#save-button').style.display = ""
+        document.querySelector('#save-button').disabled = true
+        document.querySelector('#reset-button').disabled = false
+        let li = document.createElement('li')
+        let link = document.createElement('a')
+        link.href = 'javascript:void(0)'
+        link.innerText = drawingTitle
+        li.append(link)
+        debugger
+        document.querySelector('#drawings-list').append(li)
     }
 }

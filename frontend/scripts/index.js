@@ -21,10 +21,10 @@ selectors.forEach(selector => {
 })
 
 const c1 = new Canvas()
-// const saveButton = document.querySelector('.save-button')
 const pegs = document.querySelectorAll('.peg')
 
 const api = new APIAdapter
+const dList = new DrawingList()
 
 
 

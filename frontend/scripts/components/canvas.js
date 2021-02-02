@@ -16,7 +16,6 @@ class Canvas {
         this.createRows()
         this.createSave()
         this.createReset()
-        
     }
 
     createPegs = () => {
