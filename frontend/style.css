@@ -18,3 +18,8 @@ main {
     width: 50%;
     margin: auto;
 }
+
+#below-canvas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

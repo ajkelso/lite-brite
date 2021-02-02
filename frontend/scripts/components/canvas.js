@@ -14,8 +14,8 @@ class Canvas {
         // this.createCanvas()
         this.createPegs()
         this.createRows()
-        this.createSave()
-        this.createReset()
+        // this.createSave()
+        // this.createReset()
     }
 
     createPegs = () => {
@@ -38,18 +38,21 @@ class Canvas {
         canvas.append(div)
     }
 
-    createSave = () => {
-        this.save = document.createElement('button')
-        this.save.id = 'save-button'
-        this.save.innerHTML = 'Save Drawing'
-        this.save.addEventListener('click', function (e) {
-            new SaveForm
-        })
-        this.save.disabled = true
-        canvas.append(this.save)
-    }
+    // createSave = () => {
+    //     let div = document.createElement('div')
+    //     this.save = document.createElement('button')
+    //     this.save.id = 'save-button'
+    //     this.save.innerHTML = 'Save Drawing'
+    //     this.save.addEventListener('click', function (e) {
+    //         new SaveForm
+    //     })
+    //     this.save.disabled = true
+    //     div.append(this.save)
+    //     belowCanvas.append(div)
+    // }
 
     createReset = () => {
+        let div = document.createElement('div')
         this.reset = document.createElement('button')
         this.reset.id = 'reset-button'
         this.reset.innerHTML = 'Reset Canvas'
@@ -59,7 +62,8 @@ class Canvas {
             saveButton.disabled = true
         })
         this.reset.disabled = true
-        canvas.append(this.reset)
+        div.append(this.reset)
+        belowCanvas.append(div)
     }
 
     // createCanvas = () => {

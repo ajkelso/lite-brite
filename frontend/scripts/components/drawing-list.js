@@ -4,7 +4,6 @@ class DrawingList {
         this.html = document.createElement('div')
         this.id = 'drawing-list'
         this.renderList()
-        main.append(this.html)
     }
 
     renderList = () => {
@@ -24,5 +23,6 @@ class DrawingList {
             });
         })
         this.html.append(ul)
+        // belowCanvas.append(this.html)
     }
 }

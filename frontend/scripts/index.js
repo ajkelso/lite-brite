@@ -6,6 +6,7 @@ const blueSelector = document.querySelector('#blue-button')
 const greenSelector = document.querySelector('#green-button')
 const purpleSelector = document.querySelector('#purple-button')
 const canvas = document.querySelector('#canvas')
+const belowCanvas = document.querySelector('#below-canvas')
 let mouseIsDown = false
 
 window.addEventListener('mousedown', () => mouseIsDown = true)
@@ -22,9 +23,9 @@ selectors.forEach(selector => {
 
 const c1 = new Canvas()
 const pegs = document.querySelectorAll('.peg')
-
 const api = new APIAdapter
-const dList = new DrawingList()
+const b1 = new BelowCanvas()
+// const dList = new DrawingList()
 
 
 
