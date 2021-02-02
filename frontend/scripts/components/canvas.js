@@ -13,9 +13,11 @@ class Canvas {
         this.pattern = drawing.pattern 
         this.userID = drawing.user_id
         this.drawingID = drawing.id
+        
         // this.createCanvas()
         this.createPegs()
         this.createRows()
+        this.createSideBar()
         // this.createSave()
         // this.createReset()
     }
@@ -35,8 +37,12 @@ class Canvas {
         canvas.append(div)
     }
 
+    createSideBar() {
+        belowCanvas.innerHTML = ""
+        this.sideBar = new BelowCanvas()
+    }
+
     // createSave = () => {
-    //     let div = document.createElement('div')
     //     this.save = document.createElement('button')
     //     this.save.id = 'save-button'
     //     this.save.innerHTML = 'Save Drawing'
@@ -44,23 +50,20 @@ class Canvas {
     //         new SaveForm
     //     })
     //     this.save.disabled = true
-    //     div.append(this.save)
-    //     belowCanvas.append(div)
+    //     this.buttons.append(this.save)
     // }
 
     // createReset = () => {
-    //     let div = document.createElement('div')
     //     this.reset = document.createElement('button')
     //     this.reset.id = 'reset-button'
     //     this.reset.innerHTML = 'Reset Canvas'
     //     this.reset.addEventListener('click', function (e) {
     //         document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
     //         this.disabled = true
-    //         saveButton.disabled = true
+    //         document.querySelector('#save-button').disabled = true
     //     })
     //     this.reset.disabled = true
-    //     div.append(this.reset)
-    //     belowCanvas.append(div)
+    //     this.buttons.append(this.reset)
     // }
 
     // createCanvas = () => {
