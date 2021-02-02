@@ -1,16 +1,16 @@
 class Canvas {
     
     static untouchedCanvas = () => {
-        let layout = []
+        let pattern = []
         for (let i = 0; i < 800; i++) {
-            layout.push("black")
+            pattern.push("black")
         }
-        return layout
+        return pattern
     }
     
-    constructor(layout = Canvas.untouchedCanvas()) {
+    constructor(drawing = {pattern: Canvas.untouchedCanvas()}) {
         canvas.innerHTML =""
-        this.layout = layout 
+        this.pattern = drawing.pattern 
         // this.createCanvas()
         this.createPegs()
         this.createRows()
@@ -19,7 +19,7 @@ class Canvas {
     }
 
     createPegs = () => {
-        this.pegs = this.layout.map( color => {
+        this.pegs = this.pattern.map( color => {
             return new Peg(color, this.canvas)
         })
     }

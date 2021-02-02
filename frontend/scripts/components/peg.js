@@ -31,6 +31,12 @@ class Peg {
         this.html.addEventListener('mouseover', () => {
             if (mouseIsDown){
                 circle.setAttribute('fill', `${currentColor}`)
+                if (document.querySelector('#reset-button').disabled && currentColor != null){
+                    document.querySelector('#reset-button').disabled = false
+                }
+                if (document.querySelector('#save-button').disabled && currentColor != null){
+                    document.querySelector('#save-button').disabled = false
+                }
             }
         })
 
