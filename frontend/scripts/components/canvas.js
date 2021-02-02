@@ -11,6 +11,8 @@ class Canvas {
     constructor(drawing = {pattern: Canvas.untouchedCanvas()}) {
         canvas.innerHTML =""
         this.pattern = drawing.pattern 
+        this.userID = drawing.user_id
+        this.drawingID = drawing.id
         // this.createCanvas()
         this.createPegs()
         this.createRows()
@@ -24,17 +26,12 @@ class Canvas {
         })
     }
 
-    createRows = () => {
-
-        let rows = []
-        for (let i = 0; i < this.pegs.length / 10; i++) {
-            let row = this.pegs.slice((10 * i), ((10 * i) + 10))
-            rows.push(row)
-        }
-        
+    createRows = () => {        
         let div = document.createElement('div')
+        div.setAttribute("user-id", this.userID)
+        div.setAttribute("drawing-id", this.drawingID)
         this.pegs.forEach(peg => div.append(peg.html))
-        div.className = "row"
+        div.className = "rows"
         canvas.append(div)
     }
 
