@@ -2077,3 +2077,44 @@ Processing by DrawingsController#index as */*
 Completed 200 OK in 168ms (Views: 167.0ms | ActiveRecord: 0.3ms | Allocations: 58541)
 
 
+Started GET "/drawings" for ::1 at 2021-02-02 13:59:24 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (24.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (430.15ms)
+Completed 200 OK in 481ms (Views: 452.5ms | ActiveRecord: 24.3ms | Allocations: 58558)
+
+
+Started GET "/drawings" for ::1 at 2021-02-02 14:01:23 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (590.53ms)
+Completed 200 OK in 599ms (Views: 597.5ms | ActiveRecord: 1.0ms | Allocations: 58541)
+
+
+Started GET "/drawings" for ::1 at 2021-02-02 14:04:10 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (121.21ms)
+Completed 200 OK in 127ms (Views: 126.6ms | ActiveRecord: 0.3ms | Allocations: 58540)
+
+
+Started GET "/drawings" for ::1 at 2021-02-02 14:06:42 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (458.15ms)
+Completed 200 OK in 466ms (Views: 464.8ms | ActiveRecord: 0.6ms | Allocations: 58543)
+
+
+Started GET "/drawings" for ::1 at 2021-02-02 14:10:20 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (189.12ms)
+Completed 200 OK in 195ms (Views: 193.8ms | ActiveRecord: 0.4ms | Allocations: 58538)
+
+

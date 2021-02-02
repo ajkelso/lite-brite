@@ -24,9 +24,9 @@ class BelowCanvas {
         this.reset.id = 'reset-button'
         this.reset.innerHTML = 'Reset Canvas'
         this.reset.addEventListener('click', function (e) {
-            pegs.forEach(peg => peg.setAttribute('fill', 'black'))
+            document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
             this.disabled = true
-            saveButton.disabled = true
+            document.querySelector('#save-button').disabled = true
         })
         this.reset.disabled = true
         this.buttons.append(this.reset)
