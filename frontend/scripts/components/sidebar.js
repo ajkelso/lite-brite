@@ -7,6 +7,7 @@ class SideBar {
         if (!!drawing.id){
             this.createUpdateBTN()
             this.createResetBTN()
+            this.createDeleteBTN()
             this.createNewDrawingBTN()
         } else {
             this.createSaveBTN()
@@ -45,7 +46,7 @@ class SideBar {
         this.reset = document.createElement('button')
         this.reset.id = 'reset-button'
         this.reset.classList.add("sidebar-button")
-        this.reset.innerHTML = 'Reset Canvas'
+        this.reset.innerHTML = 'Reset'
         let pattern = this.drawing.pattern
         this.reset.addEventListener('click', function (e) {
             if (document.querySelector('.rows').getAttribute('drawing-id') !== "undefined"){
@@ -73,5 +74,26 @@ class SideBar {
         this.newDrawing.addEventListener('click', (e) => new Canvas)
         div.append(this.newDrawing)
         sidebar.append(div)
+    }
+
+
+    createDeleteBTN = () => {
+        let div = document.createElement('div')
+        this.delete = document.createElement('button')
+        this.delete.id = 'delete-drawing-button'
+        this.delete.classList.add("sidebar-button")
+        this.delete.innerHTML = 'Delete Drawing'
+        this.delete.addEventListener('click', (e) => this.handleDelete())
+        div.append(this.delete)
+        sidebar.append(div)
+    }
+
+    handleDelete = () => {
+        let drawingID = this.drawing.id
+        api.deleteDrawing(drawingID)
+        .then(json => {
+            alert(`"${json.title}" was successfully deleted.`)
+        })
+        new Canvas
     }
 }

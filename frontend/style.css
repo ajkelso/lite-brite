@@ -8,8 +8,11 @@ h1 {
 
 h3 {
     text-align: center;
-    text-decoration: underline;
-    color: red;
+    color: #d1d1d1;
+}
+
+.inactive {
+    opacity: 0.6;
 }
 
 .rows {

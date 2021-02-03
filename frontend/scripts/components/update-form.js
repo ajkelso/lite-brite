@@ -14,9 +14,6 @@ class UpdateForm {
         console.log(drawing)
     }
 
-
-
-
     renderForm = () => {
         const canvasForm = document.createElement('form')
 
@@ -60,7 +57,6 @@ class UpdateForm {
             alert("Cannot update drawing")
             new Canvas
         })
-
         event.target.remove()
     }
 }
