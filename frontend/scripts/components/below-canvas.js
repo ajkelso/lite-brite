@@ -5,15 +5,12 @@ class BelowCanvas {
 
         if (!!drawing.id){
             this.createUpdateBTN()
-            // this.createNewDrawingBTN()
+            this.createResetBTN()
+            this.createNewDrawingBTN()
         } else {
             this.createSaveBTN()
+            this.createResetBTN()
         }
-        this.createResetBTN()
-
-
-        // this.createSaveBTN()
-        // this.createResetBTN()
         belowCanvas.append(this.buttons)
         this.drawingList = new DrawingList
         belowCanvas.append(this.drawingList.html)
@@ -24,6 +21,7 @@ class BelowCanvas {
         this.update.id = 'save-button'
         this.update.innerHTML = 'Update Drawing'
         this.update.addEventListener('click', (e) => new UpdateForm(this.drawing))
+        this.update.disabled = true
         this.buttons.append(this.update)
     }
 
@@ -55,5 +53,13 @@ class BelowCanvas {
         })
         this.reset.disabled = true
         this.buttons.append(this.reset)
+    }
+
+    createNewDrawingBTN = () => {
+        this.newDrawing = document.createElement('button')
+        this.newDrawing.id = 'new-drawing-button'
+        this.newDrawing.innerHTML = 'New Drawing'
+        this.newDrawing.addEventListener('click', (e) => new Canvas)
+        this.buttons.append(this.newDrawing)
     }
 }

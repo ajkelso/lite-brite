@@ -7,8 +7,8 @@ class UpdateForm {
         this.html.id = "update-form"
         this.drawingID = drawing.id
         this.drawingTitle = drawing.title
-        this.userId = drawing.user.id
-        this.userName = drawing.user.name
+        this.userId = drawing.user_id
+        this.userName = drawing.user_name
         this.renderForm()
 
         console.log(drawing)
