@@ -47,22 +47,23 @@ class SideBar {
         this.reset.id = 'reset-button'
         this.reset.classList.add("sidebar-button")
         this.reset.innerHTML = 'Reset'
-        let pattern = this.drawing.pattern
-        this.reset.addEventListener('click', function (e) {
-            if (document.querySelector('.rows').getAttribute('drawing-id') !== "undefined"){
-                let pegs = document.querySelectorAll('.peg')
-                for (let i = 0; i < pattern.length; i++) {
-                    pegs[i].setAttribute('fill', pattern[i])
-                }
-            } else {
-                document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
-            }
-            this.disabled = true
-            document.querySelector('#save-button').disabled = true
-        })
+        this.reset.addEventListener('click', this.handleReset)
         this.reset.disabled = true
         div.append(this.reset)
         sidebar.append(div)
+    }
+
+    handleReset = () => {
+        if (document.querySelector('.rows').getAttribute('drawing-id') !== "undefined"){
+            let pegs = document.querySelectorAll('.peg')
+            for (let i = 0; i < this.drawing.pattern.length; i++) {
+                pegs[i].setAttribute('fill', this.drawing.pattern[i])
+            }
+        } else {
+            document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
+        }
+        this.reset.disabled = true
+        document.querySelector('#save-button').disabled = true
     }
 
     createNewDrawingBTN = () => {
@@ -89,8 +90,7 @@ class SideBar {
     }
 
     handleDelete = () => {
-        let drawingID = this.drawing.id
-        api.deleteDrawing(drawingID)
+        api.deleteDrawing(this.drawing.id)
         .then(json => {
             alert(`"${json.title}" was successfully deleted.`)
         })
