@@ -1,6 +1,7 @@
 class SideBar {
     constructor(drawing) {
-        this.buttons = document.createElement('div')
+        // sidebar = document.createElement('div')
+        // sidebar.classList.add('canvas-view')
         this.drawing = drawing
 
         if (!!drawing.id){
@@ -11,30 +12,34 @@ class SideBar {
             this.createSaveBTN()
             this.createResetBTN()
         }
-        sidebar.append(this.buttons)
         this.drawingList = new DrawingList
         sidebar.append(this.drawingList.html)
     }
 
     createUpdateBTN = () => {
+        let div = document.createElement('div')
         this.update = document.createElement('button')
         this.update.id = 'save-button'
         this.update.innerHTML = 'Update Drawing'
         this.update.addEventListener('click', (e) => new UpdateForm(this.drawing))
         this.update.disabled = true
-        this.buttons.append(this.update)
+        div.append(this.update)
+        sidebar.append(div)
     }
 
     createSaveBTN = () => {
+        let div = document.createElement('div')
         this.save = document.createElement('button')
         this.save.id = 'save-button'
         this.save.innerHTML = 'Save Drawing'
         this.save.addEventListener('click', (e) => new SaveForm)
         this.save.disabled = true
-        this.buttons.append(this.save)
+        div.append(this.save)
+        sidebar.append(div)
     }
 
     createResetBTN = () => {
+        let div = document.createElement('div')
         this.reset = document.createElement('button')
         this.reset.id = 'reset-button'
         this.reset.innerHTML = 'Reset Canvas'
@@ -52,14 +57,17 @@ class SideBar {
             document.querySelector('#save-button').disabled = true
         })
         this.reset.disabled = true
-        this.buttons.append(this.reset)
+        div.append(this.reset)
+        sidebar.append(div)
     }
 
     createNewDrawingBTN = () => {
+        let div = document.createElement('div')
         this.newDrawing = document.createElement('button')
         this.newDrawing.id = 'new-drawing-button'
         this.newDrawing.innerHTML = 'New Drawing'
         this.newDrawing.addEventListener('click', (e) => new Canvas)
-        this.buttons.append(this.newDrawing)
+        div.append(this.newDrawing)
+        sidebar.append(div)
     }
 }
