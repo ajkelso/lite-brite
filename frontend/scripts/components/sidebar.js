@@ -1,10 +1,12 @@
 class SideBar {
     constructor(drawing) {
-        // sidebar = document.createElement('div')
-        // sidebar.classList.add('canvas-view')
         this.drawing = drawing
+        this.createButtons()
+        this.createDrawingList()
+    }
 
-        if (!!drawing.id){
+    createButtons = () => {
+        if (!!this.drawing.id){
             this.createUpdateBTN()
             this.createResetBTN()
             this.createDeleteBTN()
@@ -13,9 +15,14 @@ class SideBar {
             this.createSaveBTN()
             this.createResetBTN()
         }
+    }
+
+    createDrawingList = () => {
         this.drawingList = new DrawingList
         sidebar.append(this.drawingList.html)
     }
+
+    // Buttons:
 
     createUpdateBTN = () => {
         let div = document.createElement('div')
@@ -53,18 +60,6 @@ class SideBar {
         sidebar.append(div)
     }
 
-    handleReset = () => {
-        if (document.querySelector('.rows').getAttribute('drawing-id') !== "undefined"){
-            let pegs = document.querySelectorAll('.peg')
-            for (let i = 0; i < this.drawing.pattern.length; i++) {
-                pegs[i].setAttribute('fill', this.drawing.pattern[i])
-            }
-        } else {
-            document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
-        }
-        this.reset.disabled = true
-        document.querySelector('#save-button').disabled = true
-    }
 
     createNewDrawingBTN = () => {
         let div = document.createElement('div')
@@ -87,6 +82,21 @@ class SideBar {
         this.delete.addEventListener('click', (e) => this.handleDelete())
         div.append(this.delete)
         sidebar.append(div)
+    }
+
+    //event handlers
+
+    handleReset = () => {
+        if (document.querySelector('.rows').getAttribute('drawing-id') !== "undefined"){
+            let pegs = document.querySelectorAll('.peg')
+            for (let i = 0; i < this.drawing.pattern.length; i++) {
+                pegs[i].setAttribute('fill', this.drawing.pattern[i])
+            }
+        } else {
+            document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
+        }
+        this.reset.disabled = true
+        document.querySelector('#save-button').disabled = true
     }
 
     handleDelete = () => {
