@@ -6,6 +6,12 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+}
+
 .rows {
     display: grid;
     grid-template-columns: repeat(40, 1fr);
@@ -32,12 +38,35 @@ main {
     grid-gap: 10px;
 }
 
-ul {
+#drawing-list {
     border-top: 2px solid black;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 3px;
+    margin: 0;
 }
 
 #sidebar {
     width: fit-content;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+.drawing-link {
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+.drawing-link:hover {
+    color: red;
+}
+
+.sidebar-button {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
 }

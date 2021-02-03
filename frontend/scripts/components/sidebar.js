@@ -20,6 +20,7 @@ class SideBar {
         let div = document.createElement('div')
         this.update = document.createElement('button')
         this.update.id = 'save-button'
+        this.update.classList.add("sidebar-button")
         this.update.innerHTML = 'Update Drawing'
         this.update.addEventListener('click', (e) => new UpdateForm(this.drawing))
         this.update.disabled = true
@@ -31,6 +32,7 @@ class SideBar {
         let div = document.createElement('div')
         this.save = document.createElement('button')
         this.save.id = 'save-button'
+        this.save.classList.add("sidebar-button")
         this.save.innerHTML = 'Save Drawing'
         this.save.addEventListener('click', (e) => new SaveForm)
         this.save.disabled = true
@@ -42,6 +44,7 @@ class SideBar {
         let div = document.createElement('div')
         this.reset = document.createElement('button')
         this.reset.id = 'reset-button'
+        this.reset.classList.add("sidebar-button")
         this.reset.innerHTML = 'Reset Canvas'
         let pattern = this.drawing.pattern
         this.reset.addEventListener('click', function (e) {
@@ -65,6 +68,7 @@ class SideBar {
         let div = document.createElement('div')
         this.newDrawing = document.createElement('button')
         this.newDrawing.id = 'new-drawing-button'
+        this.newDrawing.classList.add("sidebar-button")
         this.newDrawing.innerHTML = 'New Drawing'
         this.newDrawing.addEventListener('click', (e) => new Canvas)
         div.append(this.newDrawing)
