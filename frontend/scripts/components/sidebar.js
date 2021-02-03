@@ -1,4 +1,4 @@
-class BelowCanvas {
+class SideBar {
     constructor(drawing) {
         this.buttons = document.createElement('div')
         this.drawing = drawing
@@ -11,9 +11,9 @@ class BelowCanvas {
             this.createSaveBTN()
             this.createResetBTN()
         }
-        belowCanvas.append(this.buttons)
+        sidebar.append(this.buttons)
         this.drawingList = new DrawingList
-        belowCanvas.append(this.drawingList.html)
+        sidebar.append(this.drawingList.html)
     }
 
     createUpdateBTN = () => {

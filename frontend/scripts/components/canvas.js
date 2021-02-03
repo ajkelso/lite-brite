@@ -38,8 +38,8 @@ class Canvas {
     }
 
     createSideBar = (drawing) => {
-        belowCanvas.innerHTML = ""
-        this.sideBar = new BelowCanvas(drawing)
+        sidebar.innerHTML = ""
+        this.sideBar = new SideBar(drawing)
     }
 
     // createSave = () => {

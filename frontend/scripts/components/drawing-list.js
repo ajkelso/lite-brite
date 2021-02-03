@@ -25,6 +25,5 @@ class DrawingList {
             });
         })
         this.html.append(ul)
-        // belowCanvas.append(this.html)
     }
 }

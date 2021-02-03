@@ -1,6 +1,7 @@
--add catches for fetches
+
 -rename below-canvas to sidebar and adjust css
 -build out user auth?
 
 
 -refactor to not call new Canvas with each new render?
+-fix catches
