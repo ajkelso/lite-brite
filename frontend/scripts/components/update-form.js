@@ -56,15 +56,11 @@ class UpdateForm {
                 pattern: pattern,
             }
         }).then(json => new Canvas(json))
+        .catch(error => {
+            alert("Cannot update drawing")
+            new Canvas
+        })
+
         event.target.remove()
-        // document.querySelector('#save-button').style.display = ""
-        // document.querySelector('#save-button').disabled = true
-        // document.querySelector('#reset-button').disabled = false
-        // let li = document.createElement('li')
-        // let link = document.createElement('a')
-        // link.href = 'javascript:void(0)'
-        // link.innerText = drawingTitle
-        // li.append(link)
-        // document.querySelector('#drawings-list').append(li)
     }
 }

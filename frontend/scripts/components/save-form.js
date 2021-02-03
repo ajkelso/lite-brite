@@ -54,6 +54,10 @@ class SaveForm {
                 },
             }
         }).then(json => new Canvas(json))
+        .catch(error => {
+            alert("Cannot save drawing")
+            new Canvas
+        })
         event.target.remove()
     }
 }

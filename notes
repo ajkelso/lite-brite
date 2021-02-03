@@ -1,4 +1,3 @@
--add new canvas button
 -add catches for fetches
 -rename below-canvas to sidebar and adjust css
 -build out user auth?
