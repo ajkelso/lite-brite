@@ -23,3 +23,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+ul {
+    border-style: solid;
+    border-width: 5px;
+    border-color: blanchedalmond;
+}
