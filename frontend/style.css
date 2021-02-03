@@ -2,10 +2,17 @@ body {
     background-color:#484848;
 }
 
+h1 {
+    text-align: center;
+}
+
 .rows {
     display: grid;
     grid-template-columns: repeat(40, 1fr);
     gap: 1px; 
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 main {
@@ -22,10 +29,15 @@ main {
 #draw-view {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
 ul {
-    border-style: solid;
-    border-width: 5px;
-    border-color: blanchedalmond;
+    border-top: 2px solid black;
+}
+
+#sidebar {
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 10px;
 }
