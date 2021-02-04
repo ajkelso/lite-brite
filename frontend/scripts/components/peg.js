@@ -19,8 +19,10 @@ class Peg {
         circle.setAttribute('fill', `${this.color}`)
     //change color event
         this.html.addEventListener('mousedown', () => {
-            circle.setAttribute('fill', `${currentColor}`)
-            pop.play()
+            if (currentColor){
+                circle.setAttribute('fill', `${currentColor}`)
+                pop.play()
+            }
             if (document.querySelector('#reset-button').disabled && currentColor != null){
                 document.querySelector('#reset-button').disabled = false
             }
