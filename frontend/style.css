@@ -37,8 +37,17 @@ main {
 
 #draw-view {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 4fr 2fr;
     grid-gap: 10px;
+}
+
+#controls {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.color-selector {
+    width: 100%;
 }
 
 #drawing-list {

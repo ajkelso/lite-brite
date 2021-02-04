@@ -6,9 +6,9 @@ class DrawingsController < ApplicationController
         render json: drawings
     end
 
-    def show
-        render json: @drawing
-    end
+    # def show
+    #     render json: @drawing
+    # end
 
     def create
         drawing = Drawing.new(drawing_params)
