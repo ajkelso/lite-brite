@@ -12724,3 +12724,266 @@ Processing by DrawingsController#index as */*
 Completed 200 OK in 224ms (Views: 219.0ms | ActiveRecord: 2.0ms | Allocations: 33453)
 
 
+Started GET "/drawings" for ::1 at 2021-02-04 15:42:07 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (289.19ms)
+Completed 200 OK in 293ms (Views: 291.4ms | ActiveRecord: 1.5ms | Allocations: 33462)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:42:46 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (85.12ms)
+Completed 200 OK in 90ms (Views: 87.6ms | ActiveRecord: 1.3ms | Allocations: 33455)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:43:45 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (159.41ms)
+Completed 200 OK in 164ms (Views: 160.8ms | ActiveRecord: 2.3ms | Allocations: 33456)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:44:32 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.7ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (187.93ms)
+Completed 200 OK in 195ms (Views: 192.3ms | ActiveRecord: 1.8ms | Allocations: 33459)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:45:09 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.9ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (112.32ms)
+Completed 200 OK in 120ms (Views: 115.6ms | ActiveRecord: 3.7ms | Allocations: 33453)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:45:35 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (349.42ms)
+Completed 200 OK in 355ms (Views: 352.0ms | ActiveRecord: 2.6ms | Allocations: 33462)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:46:48 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (88.83ms)
+Completed 200 OK in 95ms (Views: 92.9ms | ActiveRecord: 1.2ms | Allocations: 33455)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:48:01 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (92.07ms)
+Completed 200 OK in 95ms (Views: 92.5ms | ActiveRecord: 1.8ms | Allocations: 33456)
+
+
+Started DELETE "/drawings/1" for ::1 at 2021-02-04 15:48:06 -0500
+Processing by DrawingsController#destroy as */*
+  Parameters: {"_json"=>1, "id"=>"1", "drawing"=>{}}
+  [1m[36mDrawing Load (0.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:38:in `find_drawing'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:31:in `destroy'
+  [1m[36mDrawing Destroy (5.1ms)[0m  [1m[31mDELETE FROM "drawings" WHERE "drawings"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/drawings_controller.rb:31:in `destroy'
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:31:in `destroy'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered DrawingSerializer with ActiveModelSerializers::Adapter::Attributes (14.24ms)
+Completed 200 OK in 50ms (Views: 14.9ms | ActiveRecord: 9.1ms | Allocations: 9196)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:48:06 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (112.61ms)
+Completed 200 OK in 118ms (Views: 109.9ms | ActiveRecord: 7.4ms | Allocations: 26947)
+
+
+Started POST "/drawings" for ::1 at 2021-02-04 15:49:27 -0500
+Processing by DrawingsController#create as */*
+  Parameters: {"drawing"=>{"title"=>"Rainbow", "pattern"=>["black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "Blue", "Blue", "black", "black", "black", "Green", "black", "Yellow", "black", "black", "black", "Orange", "Orange", "Orange", "black", "black", "black", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "black", "Blue", "black", "black", "black", "Green", "black", "Yellow", "black", "black", "Orange", "black", "black", "Orange", "black", "black", "black", "black", "black", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "Blue", "Blue", "black", "black", "Green", "Green", "Yellow", "Yellow", "black", "black", "black", "black", "Orange", "Orange", "black", "black", "black", "black", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "Blue", "black", "Blue", "Blue", "Green", "black", "Yellow", "black", "black", "black", "black", "black", "Orange", "black", "black", "black", "black", "Red", "black", "black", "Red", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "Blue", "Blue", "Blue", "Blue", "Blue", "Green", "Green", "Yellow", "black", "Yellow", "Yellow", "Yellow", "Orange", "Orange", "black", "black", "black", "black", "black", "Red", "Red", "black", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "Blue", "Blue", "black", "Blue", "black", "black", "Green", "Green", "Yellow", "black", "black", "black", "Yellow", "Orange", "Orange", "black", "black", "black", "black", "Red", "Red", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "Violet", "Violet", "Violet", "black", "black", "Blue", "Blue", "black", "black", "Green", "Green", "Green", "black", "Yellow", "black", "black", "Orange", "Orange", "Orange", "black", "black", "black", "Red", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "Violet", "black", "Violet", "black", "Blue", "Blue", "Blue", "black", "black", "Green", "Green", "black", "black", "Yellow", "black", "black", "Orange", "Orange", "Orange", "black", "black", "black", "black", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "Violet", "Violet", "Violet", "black", "Blue", "Blue", "Blue", "black", "black", "Green", "Green", "black", "Yellow", "Yellow", "black", "black", "Orange", "Orange", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "black", "Violet", "black", "Blue", "black", "Blue", "black", "Green", "Green", "black", "black", "black", "Yellow", "Yellow", "black", "Orange", "Orange", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "Blue", "Blue", "black", "black", "black", "Green", "black", "black", "black", "Yellow", "Yellow", "Orange", "Orange", "Orange", "black", "black", "black", "Red", "Red", "black", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "black", "black", "Blue", "black", "Blue", "black", "black", "Green", "Green", "black", "Yellow", "Yellow", "black", "Orange", "Orange", "Orange", "black", "black", "black", "Red", "black", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "Blue", "Blue", "Blue", "Blue", "black", "black", "Green", "black", "black", "Yellow", "Yellow", "black", "Orange", "Orange", "Orange", "black", "black", "Red", "Red", "black", "Red", "Red", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "Blue", "Blue", "Blue", "black", "black", "black", "Green", "Green", "black", "Yellow", "Yellow", "black", "black", "Orange", "Orange", "black", "black", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "Blue", "Blue", "black", "black", "black", "Green", "Green", "black", "Yellow", "Yellow", "black", "black", "Orange", "Orange", "black", "black", "black", "Red", "Red", "Red", "Red", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "black", "Blue", "Blue", "black", "black", "black", "black", "Green", "black", "black", "black", "black", "black", "black", "black", "Orange", "black", "black", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"], "user_attributes"=>{"name"=>"Sheila"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Sheila"], ["LIMIT", 1]]
+  ↳ app/models/drawing.rb:8:in `user_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:15:in `create'
+  [1m[36mDrawing Create (13.4ms)[0m  [1m[32mINSERT INTO "drawings" ("pattern", "user_id", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?)[0m  [["pattern", "---\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- Green\n- black\n- Yellow\n- black\n- black\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- black\n- Blue\n- black\n- black\n- black\n- Green\n- black\n- Yellow\n- black\n- black\n- Orange\n- black\n- black\n- Orange\n- black\n- black\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- Blue\n- Blue\n- black\n- black\n- Green\n- Green\n- Yellow\n- Yellow\n- black\n- black\n- black\n- black\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- Blue\n- black\n- Blue\n- Blue\n- Green\n- black\n- Yellow\n- black\n- black\n- black\n- black\n- black\n- Orange\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- Red\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- Blue\n- Blue\n- Blue\n- Blue\n- Blue\n- Green\n- Green\n- Yellow\n- black\n- Yellow\n- Yellow\n- Yellow\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- black\n- Red\n- Red\n- black\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- Blue\n- Blue\n- black\n- Blue\n- black\n- black\n- Green\n- Green\n- Yellow\n- black\n- black\n- black\n- Yellow\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- Violet\n- Violet\n- Violet\n- black\n- black\n- Blue\n- Blue\n- black\n- black\n- Green\n- Green\n- Green\n- black\n- Yellow\n- black\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- Violet\n- black\n- Violet\n- black\n- Blue\n- Blue\n- Blue\n- black\n- black\n- Green\n- Green\n- black\n- black\n- Yellow\n- black\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- Violet\n- Violet\n- Violet\n- black\n- Blue\n- Blue\n- Blue\n- black\n- black\n- Green\n- Green\n- black\n- Yellow\n- Yellow\n- black\n- black\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- black\n- Violet\n- black\n- Blue\n- black\n- Blue\n- black\n- Green\n- Green\n- black\n- black\n- black\n- Yellow\n- Yellow\n- black\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- Green\n- black\n- black\n- black\n- Yellow\n- Yellow\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- black\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- black\n- black\n- Blue\n- black\n- Blue\n- black\n- black\n- Green\n- Green\n- black\n- Yellow\n- Yellow\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- black\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- Blue\n- Blue\n- Blue\n- Blue\n- black\n- black\n- Green\n- black\n- black\n- Yellow\n- Yellow\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- Red\n- Red\n- black\n- Red\n- Red\n- black\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- Blue\n- Blue\n- Blue\n- black\n- black\n- black\n- Green\n- Green\n- black\n- Yellow\n- Yellow\n- black\n- black\n- Orange\n- Orange\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- Green\n- Green\n- black\n- Yellow\n- Yellow\n- black\n- black\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- black\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- black\n- Green\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n"], ["user_id", 4], ["created_at", "2021-02-04 20:49:27.615158"], ["updated_at", "2021-02-04 20:49:27.615158"], ["title", "Rainbow"]]
+  ↳ app/controllers/drawings_controller.rb:15:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:15:in `create'
+[active_model_serializers] Rendered DrawingSerializer with ActiveModelSerializers::Adapter::Attributes (5.98ms)
+Completed 200 OK in 162ms (Views: 6.7ms | ActiveRecord: 16.0ms | Allocations: 18230)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:49:27 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (130.12ms)
+Completed 200 OK in 139ms (Views: 137.8ms | ActiveRecord: 0.8ms | Allocations: 36704)
+
+
+Started PATCH "/drawings/15" for ::1 at 2021-02-04 15:49:42 -0500
+Processing by DrawingsController#update as */*
+  Parameters: {"drawing"=>{"title"=>"Rainbow", "pattern"=>["black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "Blue", "Blue", "black", "black", "black", "Green", "black", "Yellow", "black", "black", "black", "Orange", "Orange", "Orange", "black", "black", "black", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "black", "Blue", "black", "black", "black", "Green", "black", "Yellow", "black", "black", "Orange", "black", "black", "Orange", "black", "black", "black", "black", "black", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "Blue", "Blue", "black", "black", "Green", "Green", "Yellow", "Yellow", "black", "black", "black", "black", "Orange", "Orange", "black", "black", "black", "black", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "black", "Blue", "black", "Blue", "Blue", "Green", "black", "Yellow", "black", "black", "black", "black", "black", "Orange", "black", "black", "black", "black", "Red", "black", "black", "Red", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "Blue", "Blue", "Blue", "Blue", "Blue", "Green", "Green", "Yellow", "black", "Yellow", "Yellow", "Yellow", "Orange", "Orange", "black", "black", "black", "black", "black", "Red", "Red", "black", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "Blue", "Blue", "black", "Blue", "black", "black", "Green", "Green", "Yellow", "black", "black", "black", "Yellow", "Orange", "Orange", "black", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "Violet", "Violet", "Violet", "black", "black", "Blue", "Blue", "black", "black", "Green", "Green", "Green", "black", "Yellow", "black", "black", "Red", "Orange", "Red", "Red", "black", "black", "Red", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "Violet", "black", "Violet", "black", "Blue", "Blue", "Blue", "black", "black", "Green", "Green", "Red", "Red", "Red", "Red", "black", "Orange", "Orange", "Orange", "black", "black", "black", "black", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "Violet", "Violet", "Violet", "black", "Blue", "Blue", "Blue", "Red", "Red", "Red", "Red", "black", "Yellow", "Yellow", "black", "black", "Orange", "Orange", "black", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "black", "Violet", "black", "Red", "Red", "Red", "Red", "Green", "Green", "black", "black", "black", "Yellow", "Yellow", "black", "Orange", "Orange", "black", "black", "black", "black", "black", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Red", "Red", "Red", "Red", "Blue", "black", "black", "black", "Green", "black", "black", "black", "Yellow", "Yellow", "Orange", "Orange", "Orange", "black", "black", "black", "Red", "Red", "black", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "black", "black", "Blue", "black", "Blue", "black", "black", "Green", "Green", "black", "Yellow", "Yellow", "black", "Orange", "Orange", "Orange", "black", "black", "black", "Red", "black", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "Blue", "Blue", "Blue", "Blue", "black", "black", "Green", "black", "black", "Yellow", "Yellow", "black", "Orange", "Orange", "Orange", "black", "black", "Red", "Red", "black", "Red", "Red", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "Blue", "Blue", "Blue", "black", "black", "black", "Green", "Green", "black", "Yellow", "Yellow", "black", "black", "Orange", "Orange", "black", "black", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "Violet", "black", "Blue", "Blue", "black", "black", "black", "Green", "Green", "black", "Yellow", "Yellow", "black", "black", "Orange", "Orange", "black", "black", "black", "Red", "Red", "Red", "Red", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "black", "Blue", "Blue", "black", "black", "black", "black", "Green", "black", "black", "black", "black", "black", "black", "black", "Orange", "black", "black", "black", "Red", "Red", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "White", "White", "black", "Violet", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black", "black"]}, "id"=>"15"}
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings" WHERE "drawings"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:38:in `find_drawing'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drawings_controller.rb:23:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/drawings_controller.rb:23:in `update'
+  [1m[36mDrawing Update (0.9ms)[0m  [1m[33mUPDATE "drawings" SET "pattern" = ?, "updated_at" = ? WHERE "drawings"."id" = ?[0m  [["pattern", "---\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- Green\n- black\n- Yellow\n- black\n- black\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- black\n- Blue\n- black\n- black\n- black\n- Green\n- black\n- Yellow\n- black\n- black\n- Orange\n- black\n- black\n- Orange\n- black\n- black\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- Blue\n- Blue\n- black\n- black\n- Green\n- Green\n- Yellow\n- Yellow\n- black\n- black\n- black\n- black\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- black\n- Blue\n- black\n- Blue\n- Blue\n- Green\n- black\n- Yellow\n- black\n- black\n- black\n- black\n- black\n- Orange\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- Red\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- Blue\n- Blue\n- Blue\n- Blue\n- Blue\n- Green\n- Green\n- Yellow\n- black\n- Yellow\n- Yellow\n- Yellow\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- black\n- Red\n- Red\n- black\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- Blue\n- Blue\n- black\n- Blue\n- black\n- black\n- Green\n- Green\n- Yellow\n- black\n- black\n- black\n- Yellow\n- Orange\n- Orange\n- black\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- Violet\n- Violet\n- Violet\n- black\n- black\n- Blue\n- Blue\n- black\n- black\n- Green\n- Green\n- Green\n- black\n- Yellow\n- black\n- black\n- Red\n- Orange\n- Red\n- Red\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- Violet\n- black\n- Violet\n- black\n- Blue\n- Blue\n- Blue\n- black\n- black\n- Green\n- Green\n- Red\n- Red\n- Red\n- Red\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- Violet\n- Violet\n- Violet\n- black\n- Blue\n- Blue\n- Blue\n- Red\n- Red\n- Red\n- Red\n- black\n- Yellow\n- Yellow\n- black\n- black\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- black\n- Violet\n- black\n- Red\n- Red\n- Red\n- Red\n- Green\n- Green\n- black\n- black\n- black\n- Yellow\n- Yellow\n- black\n- Orange\n- Orange\n- black\n- black\n- black\n- black\n- black\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Red\n- Red\n- Red\n- Red\n- Blue\n- black\n- black\n- black\n- Green\n- black\n- black\n- black\n- Yellow\n- Yellow\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- black\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- black\n- black\n- Blue\n- black\n- Blue\n- black\n- black\n- Green\n- Green\n- black\n- Yellow\n- Yellow\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- black\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- Blue\n- Blue\n- Blue\n- Blue\n- black\n- black\n- Green\n- black\n- black\n- Yellow\n- Yellow\n- black\n- Orange\n- Orange\n- Orange\n- black\n- black\n- Red\n- Red\n- black\n- Red\n- Red\n- black\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- Blue\n- Blue\n- Blue\n- black\n- black\n- black\n- Green\n- Green\n- black\n- Yellow\n- Yellow\n- black\n- black\n- Orange\n- Orange\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- Violet\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- Green\n- Green\n- black\n- Yellow\n- Yellow\n- black\n- black\n- Orange\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- Red\n- Red\n- black\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- black\n- Blue\n- Blue\n- black\n- black\n- black\n- black\n- Green\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- Orange\n- black\n- black\n- black\n- Red\n- Red\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- White\n- White\n- black\n- Violet\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n- black\n"], ["updated_at", "2021-02-04 20:49:42.888770"], ["id", 15]]
+  ↳ app/controllers/drawings_controller.rb:23:in `update'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drawings_controller.rb:23:in `update'
+[active_model_serializers] Rendered DrawingSerializer with ActiveModelSerializers::Adapter::Attributes (13.03ms)
+Completed 200 OK in 111ms (Views: 16.3ms | ActiveRecord: 2.6ms | Allocations: 22622)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:49:43 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (177.4ms)
+Completed 200 OK in 188ms (Views: 186.9ms | ActiveRecord: 0.8ms | Allocations: 36698)
+
+
+Started GET "/drawings" for ::1 at 2021-02-04 15:49:55 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (0.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:6:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/serializers/drawing_serializer.rb:5:in `user_name'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (97.02ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 1.0ms | Allocations: 33421)
+
+

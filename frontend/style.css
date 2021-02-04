@@ -60,37 +60,54 @@ main {
 .color-selector {
     width: 100%;
     background-color: rgb(141, 140, 140);
+    
 }
 
 #red-button {
     color: red;
+    border-left: red solid 6px;
+    border-right: red solid 7px;
 }
 
 #yellow-button {
     color: yellow;
+    border-left: yellow solid 6px;
+    border-right: yellow solid 7px;
 }
 
 #orange-button {
     color: orange;
+    border-left:orange solid 6px;
+    border-right: orange solid 7px;
 }
 
 #green-button {
     color: green;
+    border-left: green solid 6px;
+    border-right: green solid 7px;
 }
 
 #blue-button {
     color: blue;
+    border-left: blue solid 6px;
+    border-right: blue solid 7px;
 }
 
 #violet-button {
     color: violet;
+    border-left: violet solid 6px;
+    border-right: violet solid 7px;
 }
 
 #white-button {
     color: white;
+    border-left: white solid 6px;
+    border-right: white solid 7px;
 }
 #black-button {
     color: black;
+    border-left: black solid 6px;
+    border-right: black solid 7px;
 }
 
 #drawing-list {
