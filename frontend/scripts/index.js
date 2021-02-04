@@ -7,6 +7,7 @@ const greenSelector = document.querySelector('#green-button')
 const purpleSelector = document.querySelector('#purple-button')
 const canvas = document.querySelector('#canvas')
 const sidebar = document.querySelector('#sidebar')
+const pop = document.querySelector('audio')
 let mouseIsDown = false
 
 window.addEventListener('mousedown', () => mouseIsDown = true)
