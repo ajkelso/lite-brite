@@ -20,7 +20,7 @@ h3 {
 }
 
 .inactive {
-    opacity: 0.6;
+    /* opacity: 0.6; */
 }
 
 .rows {
@@ -59,11 +59,45 @@ main {
 
 .color-selector {
     width: 100%;
+    background-color: rgb(141, 140, 140);
+}
+
+#red-button {
+    color: red;
+}
+
+#yellow-button {
+    color: yellow;
+}
+
+#orange-button {
+    color: orange;
+}
+
+#green-button {
+    color: green;
+}
+
+#blue-button {
+    color: blue;
+}
+
+#violet-button {
+    color: violet;
+}
+
+#white-button {
+    color: white;
+}
+#black-button {
+    color: black;
 }
 
 #drawing-list {
     border-top: 2px solid black;
 }
+
+
 
 ul {
     text-align: center;
