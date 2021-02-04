@@ -87,7 +87,7 @@ class SideBar {
     //event handlers
 
     handleReset = () => {
-        if (document.querySelector('.rows').getAttribute('drawing-id') !== "undefined"){
+        if (this.drawing.id){
             let pegs = document.querySelectorAll('.peg')
             for (let i = 0; i < this.drawing.pattern.length; i++) {
                 pegs[i].setAttribute('fill', this.drawing.pattern[i])

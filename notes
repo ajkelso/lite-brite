@@ -4,3 +4,4 @@
 -refactor to not call new Canvas with each new render?
 -fix catches
 -create custom alert box
+-mute peg eventlistener if peg color is already that color?
