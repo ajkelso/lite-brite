@@ -1,5 +1,8 @@
 -build out user auth?
 
+-Adjust save and update form appearance
+-Update Artist not showing up?
+
 
 -refactor to not call new Canvas with each new render?
 -fix catches

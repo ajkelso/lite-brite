@@ -42,6 +42,7 @@ class DrawingList {
                     userLi.innerText = "Artist: " + user.name 
                     let drawingUl = document.createElement('ul')
                     user.drawings.forEach(drawing => {
+                        drawing.user_name = user.name
                         let drawingLi = document.createElement('li')
                         let drawingA = document.createElement('a')
                         drawingA.className = ('drawing-link')

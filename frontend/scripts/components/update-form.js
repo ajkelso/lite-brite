@@ -16,7 +16,7 @@ class UpdateForm {
 
     renderForm = () => {
         const canvasForm = document.createElement('form')
-
+    
         const user = document.createElement('p')
         user.innerText = `Artist: ${this.userName}`
 
