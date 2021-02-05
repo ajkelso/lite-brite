@@ -37,7 +37,7 @@ class UpdateForm {
 
         canvasForm.addEventListener('submit', this.handleSubmit)
 
-        main.append(this.html)
+        canvas.append(this.html)
     }
 
     handleSubmit = event => {

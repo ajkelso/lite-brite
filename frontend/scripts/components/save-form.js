@@ -12,7 +12,7 @@ class SaveForm {
         const canvasForm = document.createElement('form')
 
         const userLabel = document.createElement('label')
-        userLabel.innerText = "Name: "
+        userLabel.innerText = "Artist's Name: "
 
         this.userInput = document.createElement('input')
         this.userInput.type = "text"
@@ -34,7 +34,7 @@ class SaveForm {
 
         canvasForm.addEventListener('submit', this.handleSubmit)
 
-        main.append(this.html)
+        canvas.append(this.html)
     }
 
     handleSubmit = event => {
