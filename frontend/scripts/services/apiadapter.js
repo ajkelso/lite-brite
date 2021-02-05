@@ -18,7 +18,7 @@ class APIAdapter {
         return this.url + "/drawings"
     }
 
-    getUsers = () => fetch(this.userURL).then(this.parseJSON)
+    getUsers = () => fetch(this.usersURL).then(this.parseJSON)
     getUser = (userId) => fetch(this.userURL + `/${userId}`).then(this.parseJSON)
 
     getDrawings = () => fetch(this.drawingsURL).then(this.parseJSON)

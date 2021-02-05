@@ -12,6 +12,7 @@ h1 {
     background: linear-gradient(to right,red, orange , yellow, green, cyan, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 25px;
 }
 
 h3 {
@@ -50,9 +51,12 @@ main {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border: solid 2px white;
-    border-radius: 6px;
     padding: 10px;
+    outline-style: outset;
+    outline-color: white;
+    outline-width: 5px;
+    margin-bottom: 7em;
+    margin-top: 0;
 }
 
 #controls {
