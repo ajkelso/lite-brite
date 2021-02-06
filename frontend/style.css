@@ -139,10 +139,16 @@ ul {
     font-family: 'Questrial', sans-serif;
 }
 
+.user p {
+    text-align: justify;
+    color:rgb(216, 216, 216);
+    margin: 0;
+    border-bottom: solid white 1px;
+}
+
 .drawing-link {
     text-decoration: none;
     color: whitesmoke;
-    
 }
 
 .drawing-link:hover {

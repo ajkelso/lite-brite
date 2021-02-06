@@ -17,7 +17,9 @@ class DrawingList {
                 if (user.drawings.length){
                     let userLi = document.createElement('li')
                     userLi.className = "user"
-                    userLi.innerText = "Artist: " + user.name 
+                    let p = document.createElement('p')
+                    p.innerText = user.name
+                    userLi.append(p)
                     let drawingUl = document.createElement('ul')
                     user.drawings.forEach(drawing => {
                         drawing.user_name = user.name

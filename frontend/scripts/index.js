@@ -10,7 +10,8 @@ const whiteSelector = document.querySelector('#white-button')
 const blackSelector = document.querySelector('#black-button')
 const canvas = document.querySelector('#canvas')
 const sidebar = document.querySelector('#sidebar')
-const pop = document.querySelector('audio')
+const pop = document.querySelector('#pop')
+const click = document.querySelector('#click')
 let mouseIsDown = false
 
 window.addEventListener('mousedown', () => mouseIsDown = true)
@@ -22,6 +23,7 @@ const selectors = [redSelector, yellowSelector, blueSelector, greenSelector, vio
 selectors.forEach(selector => {
     selector.addEventListener('click', function(e) {
         currentColor = selector.innerText
+        click.play()
         selectors.forEach(selector => selector.style.backgroundColor = 'rgb(141, 140, 140)')
         selector.style.backgroundColor = selector.innerText 
         
