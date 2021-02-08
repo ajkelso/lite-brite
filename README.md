@@ -1,6 +1,6 @@
 # Virtual Lite-Brite
 
-Virtual Lite-Brite is a Ruby on Rails & JavaScript Single Page Application which is a computer generated version of that 80's throwback activity that some of us know and that we all love!  Create 'drawings'.  Save them.  Update them.  Delete them. Zen.
+Virtual Lite-Brite is a Ruby on Rails & JavaScript Single Page Application which is a computer generated version of that 80's throwback activity that some of us know and that we all love!  Select a color. Create 'drawings'.  Save them.  Update them.  Delete them. Zen.
 
 ## Installation
 
