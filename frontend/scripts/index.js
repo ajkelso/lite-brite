@@ -19,12 +19,12 @@ window.addEventListener('mouseup', () => mouseIsDown = false)
 
 let currentColor = null
 const selectors = [redSelector, yellowSelector, blueSelector, greenSelector, violetSelector, orangeSelector, whiteSelector, blackSelector]
-
 selectors.forEach(selector => {
     selector.addEventListener('click', function(e) {
         currentColor = selector.innerText
         click.play()
-        selectors.forEach(selector => selector.style.backgroundColor = 'rgb(141, 140, 140)')
+        resetSelectors()
+        // selectors.forEach(selector => selector.style.backgroundColor = 'rgb(141, 140, 140)')
         selector.style.backgroundColor = selector.innerText 
         
         //make all other buttons look disabled
@@ -32,11 +32,10 @@ selectors.forEach(selector => {
     })
 })
 
+const resetSelectors = () => selectors.forEach(selector => selector.style.backgroundColor = 'rgb(141, 140, 140)')
+
 const api = new APIAdapter
 const c1 = new Canvas()
-// const pegs = document.querySelectorAll('.peg')
-// const b1 = new sidebar()
-// const dList = new DrawingList()
 
 
 
