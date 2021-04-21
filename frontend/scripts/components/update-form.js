@@ -43,8 +43,8 @@ class UpdateForm {
     handleSubmit = event => {
         event.preventDefault()
         const drawingTitle = this.titleInput.value
-        const pattern = Array.from(document.querySelectorAll('.peg')).map( peg => {
-            return peg.getAttribute('fill')
+        const pattern = Array.from(document.querySelectorAll('.peg-div')).map( peg => {
+            return peg.style.backgroundColor
         })
 
         api.updateDrawing(this.drawingID, {
