@@ -10,7 +10,6 @@ class Peg {
         div.style.backgroundColor = `${this.color}`
         div.addEventListener('mousedown', () => {
             if (currentColor){
-                console.log(div)
                 div.style.backgroundColor = `${currentColor}`
                 pop.play()
             }
@@ -23,7 +22,7 @@ class Peg {
         })
         
         div.addEventListener('mouseover', () => {
-            if (mouseIsDown){
+            if (mouseIsDown && currentColor){
                 div.style.backgroundColor = `${currentColor}`
                 pop.play()
                 if (document.querySelector('#reset-button').disabled && currentColor != null){
