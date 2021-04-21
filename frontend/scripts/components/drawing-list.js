@@ -13,7 +13,7 @@ class DrawingList {
         const ul = document.createElement('ul')
         ul.id = 'drawings-list'
         api.getUsers().then(users => {
-            users.forEach(user => {
+            users.sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase()) ? -1 : 1).forEach(user => {
                 if (user.drawings.length){
                     let userLi = document.createElement('li')
                     userLi.className = "user"

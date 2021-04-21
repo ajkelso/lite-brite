@@ -26,7 +26,7 @@ h3 {
 
 .rows {
     display: grid;
-    grid-template-columns: repeat(40, 1fr);
+    grid-template-columns: repeat(50, 1fr);
     gap: 1px; 
     border: 2px solid black;
     border-radius: 10px;
@@ -163,4 +163,16 @@ ul {
 
 form {
     color: white;
+}
+
+.row { font-size: 5%; }
+
+.row > div {font-size: 1rem; display: inline-block; }
+
+.peg-div {
+  background-color: #1d1d1d;
+  height: 1.2vw;
+  width: 1.2vw;
+  display: inline-block;
+  border-radius: 1.2vw;
 }

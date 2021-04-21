@@ -13,7 +13,7 @@ class Canvas {
 
     static untouchedCanvas = () => {
         let pattern = []
-        for (let i = 0; i < 800; i++) {
+        for (let i = 0; i < 1200; i++) {
             pattern.push("black")
         }
         return pattern

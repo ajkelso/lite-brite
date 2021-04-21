@@ -1,6 +1,5 @@
 class SideBar {
     constructor(drawing) {
-        console.log(drawing)
         this.drawing = drawing
         this.createButtons()
         this.createDrawingList()
