@@ -87,13 +87,13 @@ class SideBar {
     //event handlers
 
     handleReset = () => {
+        let pegs = document.querySelectorAll('.peg-div')
         if (this.drawing.id){
-            let pegs = document.querySelectorAll('.peg')
             for (let i = 0; i < this.drawing.pattern.length; i++) {
-                pegs[i].setAttribute('fill', this.drawing.pattern[i])
+                pegs[i].style.backgroundColor = `${this.drawing.pattern[i]}`
             }
         } else {
-            document.querySelectorAll('.peg').forEach(peg => peg.setAttribute('fill', 'black'))
+            pegs.forEach(peg => peg.style.backgroundColor = "black")
         }
         this.reset.disabled = true
         document.querySelector('#save-button').disabled = true
