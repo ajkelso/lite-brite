@@ -5,7 +5,16 @@ Virtual Lite-Brite is a Ruby on Rails & JavaScript Single Page Application which
 ## Installation
 
 To use this app, just clone the repo, navigate into the backend folder, run `bundle install`, run `rake db:migrate`, run `rails s`, and then visit the index.html file (located in the frontend folder) in your web browser.
-Everything should be set up!
+
+
+## Directions
+
+Click on a color and start to draw!
+![Draw Gif](resources/draw-gif.gif)
+Save your Drawings:
+![Save Gif](resources/Save.gif)
+View Other Drawings:
+![View Gif](resources/View.gif)
 
 ## Contributing
 
