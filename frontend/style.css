@@ -20,9 +20,6 @@ h3 {
     color: #d1d1d1;
 }
 
-.inactive {
-    /* opacity: 0.6; */
-}
 
 .rows {
     display: grid;
@@ -34,7 +31,7 @@ h3 {
 }
 
 main {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto; 
 }
@@ -48,15 +45,14 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-gap: 10px;
-    width: 90%;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
     outline-style: outset;
     outline-color: white;
     outline-width: 5px;
-    margin-bottom: 7em;
-    margin-top: 0;
+    margin: 1em;
 }
 
 #controls {
