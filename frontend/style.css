@@ -160,6 +160,15 @@ form {
     color: white;
 }
 
+label {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(134, 134, 134);
+    border: 1px solid black;
+    font-size: 1em;
+}
+
 input[type=text] {
     width: auto;
     padding: 12px 20px;
