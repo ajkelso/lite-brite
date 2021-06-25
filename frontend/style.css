@@ -160,6 +160,17 @@ form {
     color: white;
 }
 
+input[type=text] {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    background-color: rgb(182, 182, 182);
+}
+
 .row { font-size: 5%; }
 
 .row > div {font-size: 1rem; display: inline-block; }
