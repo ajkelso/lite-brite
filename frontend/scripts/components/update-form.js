@@ -17,11 +17,10 @@ class UpdateForm {
     renderForm = () => {
         const canvasForm = document.createElement('form')
     
-        const user = document.createElement('p')
-        user.innerText = `Artist: ${this.userName}`
-
-        const titleLabel = document.createElement('label')
-        titleLabel.innerText = "Drawing Title: "
+        const user = document.createElement('input');
+        user.value = `${this.userName}`;
+        user.readOnly = true;
+        user.disabled = true;
 
         this.titleInput = document.createElement('input')
         this.titleInput.type = "text"
@@ -32,7 +31,7 @@ class UpdateForm {
         submitButton.type = "submit"
         submitButton.value = "Update Drawing!"
 
-        canvasForm.append(user, titleLabel, this.titleInput, submitButton)
+        canvasForm.append(user, this.titleInput, submitButton)
         this.html.append(canvasForm)
 
         canvasForm.addEventListener('submit', this.handleSubmit)
