@@ -14,26 +14,23 @@ class SaveForm {
         const userDiv = document.createElement('div')
         userDiv.className = "form-group"
 
-        const userLabel = document.createElement('label')
-        userLabel.innerText = "Artist's Name: "
-
         this.userInput = document.createElement('input')
         this.userInput.type = "text"
         this.userInput.id = "name"
+        this.userInput.placeholder = "Artist's Name..."
 
-        userDiv.append(userLabel, this.userInput)
+        userDiv.append(this.userInput)
 
         const titleDiv = document.createElement('div')
         titleDiv.className = "form-group"
 
-        const titleLabel = document.createElement('label')
-        titleLabel.innerText = "Drawing Title: "
-
         this.titleInput = document.createElement('input')
         this.titleInput.type = "text"
         this.titleInput.id = "title"
+        this.titleInput.placeholder = "Drawing Title..."
 
-        titleDiv.append(titleLabel, this.titleInput)
+
+        titleDiv.append(this.titleInput)
 
         const submitButton = document.createElement('input')
         submitButton.type = "submit"

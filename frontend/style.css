@@ -159,41 +159,19 @@ ul {
 form {
     color: white;
     margin: auto;
-    width: 80%;
+    width: 90%;
     display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
 }
 
 .form-group {
 
 }
 
-/* label {
-    padding: 12px 20px;
-    box-sizing: border-box;
-    background-color: rgb(134, 134, 134);
-    border: 1px solid black;
-    font-size: 1em;
-    width: 30%;
-}
-
 input[type=text] {
-    padding: 12px 20px;
-    margin: 8px 0; 
-    box-sizing: border-box;
-    width: 70%;
+    padding: 10px 20px;
 }
-
-input[type=text]:focus {
-    background-color: rgb(182, 182, 182);
-} */
-
-/* input[type=submit] {
-    margin:auto;
-    width: 75%;
-    font-size: 1em;
-    padding: 12px 20px;
-    box-sizing: border-box;
-} */
 
 .row { font-size: 5%; }
 
