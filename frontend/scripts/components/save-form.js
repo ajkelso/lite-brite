@@ -12,6 +12,7 @@ class SaveForm {
         const canvasForm = document.createElement('form')
 
         const userDiv = document.createElement('div')
+        userDiv.className = "form-group"
 
         const userLabel = document.createElement('label')
         userLabel.innerText = "Artist's Name: "
@@ -23,6 +24,7 @@ class SaveForm {
         userDiv.append(userLabel, this.userInput)
 
         const titleDiv = document.createElement('div')
+        titleDiv.className = "form-group"
 
         const titleLabel = document.createElement('label')
         titleLabel.innerText = "Drawing Title: "

@@ -160,9 +160,14 @@ form {
     color: white;
     margin: auto;
     width: 80%;
+    display: flex;
 }
 
-label {
+.form-group {
+
+}
+
+/* label {
     padding: 12px 20px;
     box-sizing: border-box;
     background-color: rgb(134, 134, 134);
@@ -173,22 +178,22 @@ label {
 
 input[type=text] {
     padding: 12px 20px;
-    /* margin: 8px 0; */
+    margin: 8px 0; 
     box-sizing: border-box;
     width: 70%;
 }
 
 input[type=text]:focus {
     background-color: rgb(182, 182, 182);
-}
+} */
 
-input[type=submit] {
+/* input[type=submit] {
     margin:auto;
     width: 75%;
     font-size: 1em;
     padding: 12px 20px;
     box-sizing: border-box;
-}
+} */
 
 .row { font-size: 5%; }
 
