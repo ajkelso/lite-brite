@@ -11,6 +11,7 @@ h1 {
     font-size: 6em;
     background: linear-gradient(to right,red, orange , yellow, green, cyan, blue, violet);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 25px;
 }
@@ -163,10 +164,6 @@ form {
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
-}
-
-.form-group {
-
 }
 
 input[type=text] {
