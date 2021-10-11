@@ -11,12 +11,18 @@ class SaveForm {
     renderForm = () => {
         const canvasForm = document.createElement('form')
 
+        const userDiv = document.createElement('div')
+
         const userLabel = document.createElement('label')
         userLabel.innerText = "Artist's Name: "
 
         this.userInput = document.createElement('input')
         this.userInput.type = "text"
         this.userInput.id = "name"
+
+        userDiv.append(userLabel, this.userInput)
+
+        const titleDiv = document.createElement('div')
 
         const titleLabel = document.createElement('label')
         titleLabel.innerText = "Drawing Title: "
@@ -25,11 +31,13 @@ class SaveForm {
         this.titleInput.type = "text"
         this.titleInput.id = "title"
 
+        titleDiv.append(titleLabel, this.titleInput)
+
         const submitButton = document.createElement('input')
         submitButton.type = "submit"
         submitButton.value = "Save Drawing!"
 
-        canvasForm.append(userLabel, this.userInput, titleLabel, this.titleInput, submitButton)
+        canvasForm.append(userDiv, titleDiv, submitButton)
         this.html.append(canvasForm)
 
         canvasForm.addEventListener('submit', this.handleSubmit)
